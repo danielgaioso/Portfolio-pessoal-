@@ -1,0 +1,10 @@
+#main-content {
+  position: fixed;
+  overflow-x:scroll;
+  overflow-y: hidden;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}

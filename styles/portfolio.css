@@ -1,0 +1,37 @@
+/* acentuação tranquila */
+@charset "UTF-8";
+
+/* 
+to-do list
+cores
+embedar fontes
+
+*/
+
+/* pre definições */
+:root{
+    --corprincipal: #ffffff;
+    --corsecundaria: #000000;
+
+    --standardfont: fonte1, fonte2, sans-serif;
+}
+
+/* modifica tudo */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--corsecundaria);
+    padding: 20px;
+    /* responsividade */
+    margin:auto;
+    min-width: 280px;
+    max-width: max-content;
+}
+
+img{
+    /* responsividade */
+    width: 100%;
+}
