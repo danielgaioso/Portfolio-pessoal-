@@ -1,10 +1,19 @@
-#main-content {
+body{
+  background-color: black;
   position: fixed;
   overflow-x:scroll;
   overflow-y: hidden;
-  height: 100vh;
-  width: auto;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
+}
+
+#main-content {
+  height: 98vh;
+  display:flex;
+  align-items:center;
+  flex-wrap:nowrap;
+}
+ 
+.img {
+  position: fixed;
+  height:100vh;
+  align-items:center;
 }
