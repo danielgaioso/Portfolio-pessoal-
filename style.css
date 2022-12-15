@@ -1,11 +1,11 @@
 body{
   background-color: black;
-  position: fixed;
   overflow-x:scroll;
   overflow-y: hidden;
 }
 
 #main-content {
+  position: relative;
   height: 98vh;
   display:flex;
   align-items:center;
@@ -13,7 +13,6 @@ body{
 }
  
 .img {
-  position: fixed;
   height:100vh;
   align-items:center;
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#catscroll {
+  width: 200vh;
+  height: 95vh;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+    </style>
+    <script>
+        const scrollContent = document.getElementById('scroll-content');
+const screenWidth = window.innerWidth;
+let lastMousePos = 0;
+
+function updatePosition(mousePos) {
+  if (mousePos > screenWidth - 100) {
+    const delta = mousePos - lastMousePos;
+    const currentPos = parseInt(scrollContent.style.left) || 0;
+    scrollContent.style.left = `${currentPos + delta}px`;
+  }
+  lastMousePos = mousePos;
+}
+
+function onMouseMove(event) {
+  updatePosition(event.clientX);
+  requestAnimationFrame(onMouseMove);
+}
+
+requestAnimationFrame(onMouseMove);
+
+    </script>
+</head>
+  <body>
+    <div id="scroll-content">
+      <img src="total.png" />
+    </div>
+</body>
+</html>
