@@ -9,26 +9,38 @@
     <title>Daniel Gaioso</title>
 </head>
 <body>
-    <header> <img src="" alt="logo">
+    <header> <img src="imgs/logo.png" alt="logo" id="logo">
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <img src="imgs/menu.png" alt="menu" id="menuImg"  onclick="clickMenu()">
+            <menu id="navegacao">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </menu>
         </nav>
     </header>
     <main>
         <article>
             <h1>Olá, meu nome é Daniel</h1>
-            <!-- colocar o embed de um vídeo não listado no yt--> 
+            <!-- colocar o embed de um vídeo não listado no yt
 
             <picture>
                 <source media="(max-width: 600px)" srcset="">
-                <img src="" alt="ainnn">
+                <img src="" alt="ainnn">--> 
             </picture>
         </article>
     </main>
     <footer>
         <p>@odanielgaioso</p>
     </footer>
+    <script>
+        function clickMenu() {
+          if (navegacao.style.display == 'block'){
+            navegacao.style.display = 'none'
+          } else {
+            navegacao.style.display = 'block'
+          }
+        }
+    </script>
 </body>
 </html>
