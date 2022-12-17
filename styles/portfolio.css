@@ -20,7 +20,7 @@ body {
     background-color: var(--corsecundaria);
 }
 
-header{
+nav{
     height: 100px;
     width: 100%;
     background-color: var(--corprincipal);
