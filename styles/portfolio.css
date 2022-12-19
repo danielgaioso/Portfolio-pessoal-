@@ -1,9 +1,5 @@
-/* acentuação tranquila */ @charset "UTF-8";
-
-/* to-do list
-cores
-embedar fontes
-*/
+@charset "UTF-8";
+/* to-do list: cores / embedar fontes */
 
 :root {
     --corprincipal: #ffffff;
@@ -12,24 +8,31 @@ embedar fontes
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    width: 100vw;
     background-color: var(--corsecundaria);
 }
 
-nav{
-    height: 100px;
-    width: 100%;
-    background-color: var(--corprincipal);
-    align-items: center;
+header {
+    height: 80px;
+    width: 100vw;
+    background: #0c0c0c10;
 }
 
-#logo{
+header #logo{
     height: 50px;
     width: 50px;
+}
+
+menu{
+    height: 80px;
+    width: 100%;
+    align-items: center;
 }
 
 #menuImg{
@@ -47,4 +50,16 @@ img{
 
 #navegacao {
     display: none;
+}
+
+main{
+    height: 1500px;
+}
+
+h1, h2, p{
+    color: var(--corprincipal);
+}
+
+footer > p{
+    text-align: center;
 }
