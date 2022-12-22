@@ -4,7 +4,7 @@
     --branco: #ffffff;
     --preto: #000000;
     --primary: #000000;
-    --secondary: #000000;
+    --secondary: #24d1d1;
     --standardfont: 'Satoshi', sans-serif;
 }
 
@@ -19,28 +19,58 @@ body {
     background-color: var(--preto);
 }
 
+p {
+    font: regular 16px var(--standardfont);
+    color: var(--branco)
+}
+
 header {
     height: 100px;
-    width: 100vw;
-    background: #f70101;
+    width: 100%;
+    background: #11005c;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 header .logo{
     width: 50%;
+    display: flex;
+    flex-direction: row;
 }
 header #logo{
     height: 60px;
     width: 60px;
 }
 
-header .menu ul{
+a{
+    color: var(--branco);
+}
+
+menu, ul{     /* horizontal*/
+    display: flex;
+    flex-direction: row;
+}
+
+li{    /* padding entre links / sem bolinha*/
+    padding: 0 20px;
+    list-style: none;
+}
+li:hover{
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+
+
+/*header > .menu > ul{
     display: flex;
     height: 80px;
-    width: 100%;
-
 }
+
+header > .menu > ul > li{
+    padding: 0 10px;
+    list-style: none;
+}*/
 
 
 
@@ -68,24 +98,13 @@ header .menu ul{
     height: 50px;
     width: 50px;
     position: relative;
-    left: 90%;
-
-}
-
-img{
-    /* responsividade */
-    width: 100%;
-}
-
-#navegacao {
-    display: none;
 }
 
 main{
     height: 1500px;
 }
 
-h1, h2, p{
+h1, h2{
     color: var(--corprincipal);
 }
 
