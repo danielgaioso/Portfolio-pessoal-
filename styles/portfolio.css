@@ -1,9 +1,8 @@
 @charset "UTF-8";
-
-@font-face {font-family: 'Satoshi-Bold';src: url('../fonts/Fonts/WEB/Satoshi-Bold.woff2') format('woff2'), url('../fonts/Fonts/WEB/Satoshi-Bold.woff') format('woff'), url('../fonts/Fonts/WEB/Satoshi-Bold.ttf') format('truetype');font-weight: 700; font-display: swap; font-style: normal;}
-@font-face {font-family: 'Satoshi-Medium';src: url('../fonts/Fonts/WEB/fonts/Satoshi-Medium.woff2') format('woff2'),url('../fonts/Fonts/WEB/fonts/Satoshi-Medium.woff') format('woff'),url('../fonts/Fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');font-weight: 500;font-display: swap;font-style: normal;}
-@font-face {    font-family: 'Satoshi-Regular';    src: url('../fonts/Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'), url('../fonts/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff'), url('../fonts/Fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; font-style: normal;}
-@font-face {font-family: 'Satoshi-Light';src: url('../fonts/Fonts/WEB/fonts/Satoshi-Light.woff2') format('woff2'),url('../fonts/Fonts/WEB/fonts/Satoshi-Light.woff') format('woff'),url('../fonts/Fonts/WEB/fonts/Satoshi-Light.ttf') forma('truetype');font-weight: 300;font-display: swap;font-style: normal;}
+@font-face {font-family: 'Satoshi-Bold';src: url('../fonts/satoshi/fonts/Satoshi-Bold.woff2') format('woff2'), url('../fonts/satoshi/fonts/Satoshi-Bold.woff') format('woff'), url('../fonts/satoshi/fonts/Satoshi-Bold.ttf') format('truetype');font-weight: 700; font-display: swap; font-style: normal;}
+@font-face {font-family: 'Satoshi-Medium';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Medium.woff2') format('woff2'),url('../fonts/satoshi/fonts/fonts/Satoshi-Medium.woff') format('woff'),url('../fonts/satoshi/fonts/fonts/Satoshi-Medium.ttf') format('truetype');font-weight: 500;font-display: swap;font-style: normal;}
+@font-face {    font-family: 'Satoshi-Regular';    src: url('../fonts/satoshi/fonts/fonts/Satoshi-Regular.woff2') format('woff2'), url('../fonts/satoshi/fonts/fonts/Satoshi-Regular.woff') format('woff'), url('../fonts/satoshi/fonts/fonts/Satoshi-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; font-style: normal;}
+@font-face {font-family: 'Satoshi-Light';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Light.woff2') format('woff2'),url('../fonts/satoshi/fonts/fonts/Satoshi-Light.woff') format('woff'),url('../fonts/satoshi/fonts/fonts/Satoshi-Light.ttf') forma('truetype');font-weight: 300;font-display: swap;font-style: normal;}
 
 :root {
     --branco: #F9EBE0;
@@ -19,8 +18,7 @@
     --fontsmall: 14px 'Satoshi-Light', sans-serif;
 }
 
-* {
-    margin: 0;
+* {    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
