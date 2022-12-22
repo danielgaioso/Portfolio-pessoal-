@@ -1,20 +1,22 @@
 @charset "UTF-8";
-@font-face {
-    font-family: 'Satoshi-Regular';
-    src: url('../fonts/Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'),
-         url('../fonts/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff'),
-         url('../fonts/Fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype');
-         font-weight: 400;
-         font-display: swap;
-         font-style: normal;
-  }
+
+@font-face {font-family: 'Satoshi-Bold';src: url('../fonts/Fonts/WEB/Satoshi-Bold.woff2') format('woff2'), url('../fonts/Fonts/WEB/Satoshi-Bold.woff') format('woff'), url('../fonts/Fonts/WEB/Satoshi-Bold.ttf') format('truetype');font-weight: 700; font-display: swap; font-style: normal;}
+@font-face {font-family: 'Satoshi-Medium';src: url('../fonts/Fonts/WEB/fonts/Satoshi-Medium.woff2') format('woff2'),url('../fonts/Fonts/WEB/fonts/Satoshi-Medium.woff') format('woff'),url('../fonts/Fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');font-weight: 500;font-display: swap;font-style: normal;}
+@font-face {    font-family: 'Satoshi-Regular';    src: url('../fonts/Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'), url('../fonts/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff'), url('../fonts/Fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; font-style: normal;}
+@font-face {font-family: 'Satoshi-Light';src: url('../fonts/Fonts/WEB/fonts/Satoshi-Light.woff2') format('woff2'),url('../fonts/Fonts/WEB/fonts/Satoshi-Light.woff') format('woff'),url('../fonts/Fonts/WEB/fonts/Satoshi-Light.ttf') forma('truetype');font-weight: 300;font-display: swap;font-style: normal;}
 
 :root {
-    --branco: #ffffff;
-    --preto: #000000;
-    --primary: #000000;
-    --secondary: #24d1d1;
+    --branco: #F9EBE0;
+    --preto: #13171C;
+    --primary: #3823A3;
+    --secondary: #4FDEA9;
+
+    --fonttitle: 96px 'Satoshi-Bold', sans-serif;
+    --fonth2: 48px 'Satoshi-Bold', sans-serif;
+    --fonth3: 24px 'Satoshi-Bold', sans-serif;
+    --fonth4: 20px 'Satoshi-Medium', sans-serif;
     --fontp: 16px 'Satoshi-Regular', sans-serif;
+    --fontsmall: 14px 'Satoshi-Light', sans-serif;
 }
 
 * {
@@ -28,6 +30,17 @@ body {
     background-color: var(--preto);
 }
 
+h1 {
+    font: var(--fonttitle);
+    color: var(--branco);
+}
+
+h4 {
+    font: var(--fonth4);
+    color: var(--branco);
+}
+
+
 p {
     font: var(--fontp);
     color: var(--branco);
@@ -36,11 +49,14 @@ p {
 header {
     height: 84px;
     width: 100%;
-    background: #11005c;
+    background: #05001d;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
+header p{font-family: 'Satoshi-Bold', sans-serif;}
+
 header .logo{
     width: 50%;
     display: flex;
@@ -57,11 +73,20 @@ a{
     font: var(--fontp);   
     color: var(--branco);
     text-decoration: none;
+    align-items: center;
 }
 
-menu, ul{     /* horizontal*/
+menu, ul{ 
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+#button{
+    background-color: var(--primary);
+    border-radius: 25px;
+    height: 40px;
+    display: flex;
     align-items: center;
 }
 
@@ -69,9 +94,10 @@ li{    /* padding entre links / sem bolinha*/
     padding: 0 20px;
     list-style: none;
 }
+
+
 li:hover{
     cursor: pointer;
-    color: var(--secondary);
 }
 
 
@@ -86,6 +112,9 @@ header > .menu > ul > li{
     list-style: none;
 }*/
 
+#ola{
+    color: var(--secondary);
+}
 
 
 
