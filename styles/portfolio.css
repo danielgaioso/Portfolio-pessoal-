@@ -5,7 +5,7 @@
     --preto: #000000;
     --primary: #000000;
     --secondary: #24d1d1;
-    --standardfont: 'Satoshi', sans-serif;
+    --fontp: regular 16px 'Satoshi', sans-serif;
 }
 
 * {
@@ -20,8 +20,7 @@ body {
 }
 
 p {
-    font: regular 16px var(--standardfont);
-    color: var(--branco)
+    font: var(--fontp);
 }
 
 header {
