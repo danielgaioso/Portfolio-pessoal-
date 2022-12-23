@@ -23,6 +23,13 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(124, 124, 124, 0.418);
+    border-radius: 10px;
+}
 body {
     width: 100vw;
     background-color: var(--preto);
@@ -117,19 +124,6 @@ li:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 main{
     height: 1500px;
     width: 1240px;
@@ -139,4 +133,18 @@ main{
 
 footer > p{
     text-align: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1240px) {
+    header {
+        width: 100%;
+        padding: 0 15px 0 15px;
+    }
+
+}
+
+@media screen and (min-width: 380px) and (max-width: 599px) {
+    ul{
+        display: none;
+    }
 }
