@@ -125,15 +125,27 @@ li:hover{
 
 
 main{
-    height: 1500px;
+    height: 500px;
     width: 1240px;
     display: flex;
     margin: auto;
 }
 
-footer > p{
-    text-align: center;
+footer{
+    height: 500px;
+    width: 100%;
+    background-color: black;
 }
+
+#footer-of-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
 
 @media screen and (min-width: 600px) and (max-width: 1240px) {
     header {
