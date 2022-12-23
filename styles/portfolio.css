@@ -26,6 +26,7 @@
 body {
     width: 100vw;
     background-color: var(--preto);
+    overflow-x: hidden;
 }
 
 h1 {
@@ -46,9 +47,9 @@ p {
 
 header {
     height: 84px;
-    width: 100%;
-    background: #05001d;
+    width: 1240px;
     display: flex;
+    margin: auto;
     align-items: center;
     justify-content: space-around;
 }
@@ -56,14 +57,11 @@ header {
 header p{font-family: 'Satoshi-Bold', sans-serif;}
 
 header .logo{
-    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 header #logo{
-    height: 60px;
-    width: 60px;
     margin-right: 20px;
 }
 
@@ -80,16 +78,25 @@ menu, ul{
     align-items: center;
 }
 
+menu{
+    margin-right: 0;
+    margin-left: auto;
+}
+
 #button{
     background-color: var(--primary);
+    padding: 0 15px;
     border-radius: 25px;
     height: 40px;
     display: flex;
     align-items: center;
 }
 
+#language{ display: flex;}
+#icon-language{ margin-right: 8px;}
+
 li{    /* padding entre links / sem bolinha*/
-    padding: 0 20px;
+    margin: 0 16px;
     list-style: none;
 }
 
@@ -97,18 +104,6 @@ li{    /* padding entre links / sem bolinha*/
 li:hover{
     cursor: pointer;
 }
-
-
-
-/*header > .menu > ul{
-    display: flex;
-    height: 80px;
-}
-
-header > .menu > ul > li{
-    padding: 0 10px;
-    list-style: none;
-}*/
 
 #ola{
     color: var(--secondary);
@@ -135,18 +130,11 @@ header > .menu > ul > li{
 
 
 
-#menuImg{
-    height: 50px;
-    width: 50px;
-    position: relative;
-}
-
 main{
     height: 1500px;
-}
-
-h1, h2{
-    color: var(--corprincipal);
+    width: 1240px;
+    display: flex;
+    margin: auto;
 }
 
 footer > p{
