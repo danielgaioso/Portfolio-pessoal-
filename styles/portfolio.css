@@ -133,7 +133,7 @@ main{
 
 footer{
     height: 500px;
-    width: 100%;
+    width: 80%;
     background-color: black;
 }
 
@@ -142,7 +142,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-}
+    }
 
 
 
