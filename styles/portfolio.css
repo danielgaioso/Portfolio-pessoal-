@@ -133,10 +133,23 @@ main{
 
 footer{
     height: 500px;
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: black;
+    
 }
-
+#footer_content{
+    width: 1240px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#footer_logo{
+    width: fit-content;
+    position: relative;
+    translate: 50%;
+}
 #footer-of-footer{
     display: flex;
     justify-content: space-between;
