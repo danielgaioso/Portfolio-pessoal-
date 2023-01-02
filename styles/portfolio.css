@@ -160,7 +160,7 @@ footer{
 
 
 
-@media screen and (min-width: 600px) and (max-width: 1240px) {
+@media screen and (min-width: 680px) and (max-width: 1240px) {
     header {
         width: 100%;
         padding: 0 15px 0 15px;
@@ -168,8 +168,8 @@ footer{
 
 }
 
-@media screen and (min-width: 380px) and (max-width: 599px) {
-    ul{
-        display: none;
+@media screen and (min-width: 380px) and (max-width: 650px) {
+        ul{
+            display: none;
+        }
     }
-}
