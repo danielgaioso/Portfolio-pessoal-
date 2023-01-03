@@ -132,7 +132,7 @@ main{
 }
 
 footer{
-    height: 300px;
+    height: 250px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -147,7 +147,7 @@ footer{
 }
 #footer_logo{
     width: fit-content;
-    margin: auto 0;
+    margin: 0 0 auto 0;
 }
 #footer-of-footer{
     max-width: 1240px;
@@ -156,8 +156,13 @@ footer{
     padding: 16px 0;
    }
 #menuFooter{
-
-}
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    margin: 16px;}
+    #menuFooter p {
+        padding: 0 8px;
+    }
 
 
 
