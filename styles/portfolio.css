@@ -142,6 +142,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 0.1px rgba(255, 255, 255, 0.24) solid;
 }
 #footer_logo{
     width: fit-content;
@@ -161,7 +162,20 @@ footer{
     #menuFooter p {
         padding: 0 8px;
     }
-
+.footer_social_stroke{
+    width: 24px;
+    stroke: #ffffff25;
+}
+.footer_social_fill{
+    width: 24px;
+    fill: #ffffff25;
+}
+.footer_social_fill:hover{
+    fill: #ffffffc4;
+}
+.footer_social_stroke:hover{
+    stroke: #ffffffc4;
+}
 
 
 
