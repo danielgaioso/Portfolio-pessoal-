@@ -41,6 +41,16 @@ h1 {
     color: var(--branco);
 }
 
+h2 {
+    font: var(--fonth2);
+    color: var(--branco);
+}
+
+h4 {
+    font: var(--fonth4);
+    color: var(--branco);
+}
+
 h4 {
     font: var(--fonth4);
     color: var(--branco);
@@ -112,17 +122,9 @@ li:hover{
     cursor: pointer;
 }
 
-#ola{
+#green-high{
     color: var(--secondary);
 }
-
-
-
-
-
-
-
-
 
 main{
     height: 500px;
@@ -131,11 +133,23 @@ main{
     margin: auto;
 }
 
+
+
+#home{
+    margin: 0 auto;
+    height: 100vh;
+    border: solid #ffffff  5px;
+}
+
+
+
+
+
 footer{
     height: 250px;
     width: 100%;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 #footer_content{
     width: 1240px;
