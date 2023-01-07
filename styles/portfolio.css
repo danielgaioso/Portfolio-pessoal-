@@ -1,9 +1,12 @@
 @charset "UTF-8";
+/*#region ==============fonts=================*/
 @font-face {font-family: 'Satoshi-Bold';src: url('../fonts/satoshi/fonts/Satoshi-Bold.woff2') format('woff2'), url('../fonts/satoshi/fonts/Satoshi-Bold.woff') format('woff'), url('../fonts/satoshi/fonts/Satoshi-Bold.ttf') format('truetype');font-weight: 700; font-display: swap; font-style: normal;}
 @font-face {font-family: 'Satoshi-Medium';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Medium.woff2') format('woff2'),url('../fonts/satoshi/fonts/fonts/Satoshi-Medium.woff') format('woff'),url('../fonts/satoshi/fonts/fonts/Satoshi-Medium.ttf') format('truetype');font-weight: 500;font-display: swap;font-style: normal;}
 @font-face {    font-family: 'Satoshi-Regular';    src: url('../fonts/satoshi/fonts/fonts/Satoshi-Regular.woff2') format('woff2'), url('../fonts/satoshi/fonts/fonts/Satoshi-Regular.woff') format('woff'), url('../fonts/satoshi/fonts/fonts/Satoshi-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; font-style: normal;}
 @font-face {font-family: 'Satoshi-Light';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Light.woff2') format('woff2'),url('../fonts/satoshi/fonts/fonts/Satoshi-Light.woff') format('woff'),url('../fonts/satoshi/fonts/fonts/Satoshi-Light.ttf') forma('truetype');font-weight: 300;font-display: swap;font-style: normal;}
-
+ /*#endregion*/
+ 
+/*#region ============components==============*/
 :root {
     --branco: #F9EBE0;
     --preto: #13171C;
@@ -35,6 +38,22 @@ body {
     background-color: var(--preto);
     overflow-x: hidden;
 }
+#cursor-dot{
+    height: 20px;
+    width: 20px;
+    border: 3px solid var(--branco);
+    border-radius: 50%;
+    position: fixed;
+    transition: all 0.1s ease-out;
+}
+#cursor-dot::after{
+    height: 20px;
+    width: 20px;
+    background-color: var(--branco);
+    border-radius: 50%;
+    position: fixed;
+    transition: all 0.1s ease-out;
+}
 
 h1 {
     font: var(--fonttitle);
@@ -61,7 +80,39 @@ p {
     font: var(--fontp);
     color: var(--branco);
 }
+a{
+    font: var(--fontp);   
+    color: var(--branco);
+    text-decoration: none;
+    align-items: center;
+}
 
+li{    /* padding entre links / sem bolinha*/
+    margin: 0 16px;
+    list-style: none;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+.button{
+    background-color: var(--primary);
+    padding: 0 15px;
+    border-radius: 25px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+ /*#endregion*/
+
+ main{
+    height: 500px;
+    width: 1240px;
+    display: flex;
+    margin: auto;}
+
+/*#region ==============header================*/
 header {
     height: 84px;
     width: 1240px;
@@ -82,13 +133,6 @@ header #logo{
     margin-right: 20px;
 }
 
-a{
-    font: var(--fontp);   
-    color: var(--branco);
-    text-decoration: none;
-    align-items: center;
-}
-
 menu, ul{ 
     display: flex;
     flex-direction: row;
@@ -100,51 +144,47 @@ menu{
     margin-left: auto;
 }
 
-#button{
-    background-color: var(--primary);
-    padding: 0 15px;
-    border-radius: 25px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-}
-
 #language{ display: flex;}
 #icon-language{ margin-right: 8px;}
-
-li{    /* padding entre links / sem bolinha*/
-    margin: 0 16px;
-    list-style: none;
-}
-
-
-li:hover{
-    cursor: pointer;
-}
-
-#green-high{
-    color: var(--secondary);
-}
-
-main{
-    height: 500px;
-    width: 1240px;
-    display: flex;
-    margin: auto;
-}
+#green-high{color: var(--secondary);}
+ /*#endregion*/
 
 
 
+
+
+
+/*#region ===============home=============*/
 #home{
     margin: 0 auto;
     height: 100vh;
-    border: solid #ffffff  5px;
+    border: solid #ffffff10  0.2px;
 }
 
 
+#video{
+    box-shadow: 0px 0px 96px 0px rgba(44,199,160,0.62);
+}
+ /*#endregion*/
+ 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#region ==============footer=================*/
 footer{
     height: 250px;
     width: 100%;
@@ -191,9 +231,9 @@ footer{
 .footer_social_stroke:hover{
     stroke: #ffffffc4;
 }
+ /*#endregion*/
 
-
-
+ /*#region ===========media-query===========*/
 @media screen and (min-width: 680px) and (max-width: 1240px) {
     header {
         width: 100%;
@@ -207,3 +247,4 @@ footer{
             display: none;
         }
     }
+ /*#endregion*/
