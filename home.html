@@ -73,8 +73,9 @@
         </div>
     </footer>-->
     <script>
-        let link = document.querySelectorAll('.link')
-        const cursorDot = document.getElementById('cursor-dot');
+        var link = document.querySelectorAll('.link')
+        var cursorDot = document.getElementById('cursor-dot');
+
         window.addEventListener("mousemove", function(e){
             const posX = e.clientX;
             const posY = e.clientY;
@@ -82,6 +83,7 @@
             cursorDot.style.left = `${posX}px`;
             cursorDot.style.top = `${posY}px`;
         })
+
         link.forEach(link => {
             link.addEventListener('mouseleave', () => {
                 cursorDot.classList.remove('cursor-link')
@@ -89,6 +91,10 @@
             link.addEventListener('mouseover', () => {
                 cursorDot.classList.add('cursor-link')
             })
+        })
+
+        cursorDot.addEventListener('click', function(a) {
+            cursorDot.classList.add('cursor-click')
         })
 
 

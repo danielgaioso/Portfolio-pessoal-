@@ -6,6 +6,16 @@
 @font-face {font-family: 'Satoshi-Light';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Light.woff2') format('woff2'),url('../fonts/satoshi/fonts/fonts/Satoshi-Light.woff') format('woff'),url('../fonts/satoshi/fonts/fonts/Satoshi-Light.ttf') forma('truetype');font-weight: 300;font-display: swap;font-style: normal;}
  /*#endregion*/
  
+@keyframes cursorClick{
+    0%{
+
+    }
+    100%{
+        scale: (2);
+    }
+}
+
+
 /*#region ============components==============*/
 :root {
     --branco: #F9EBE0;
@@ -34,6 +44,9 @@
     background-color: rgba(124, 124, 124, 0.418);
     border-radius: 10px;
 }
+::selection{
+    background-color: var(--secondary);
+    mix-blend-mode: difference;}
 body {
     width: 100vw;
     background-color: var(--preto);
@@ -53,9 +66,14 @@ body {
 }
 
 .cursor-link{
+    transform: scale(2);
     background: var(--branco);
-    transform: scale(5px);
     mix-blend-mode: difference;
+}
+
+.cursor-click{
+    background: var(--branco);
+    animation: cursorClick 0.4s ease-out forwards;
 }
 
 h1 {
