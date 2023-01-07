@@ -38,23 +38,24 @@ body {
     width: 100vw;
     background-color: var(--preto);
     overflow-x: hidden;
+    cursor: none;
 }
+
 #cursor-dot{
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
     border: 3px solid var(--branco);
     border-radius: 50%;
     position: fixed;
     transform: translate(-50%, -50%);
     transition: all 0.1s ease-out;
+    pointer-events: none;
 }
-#cursor-dot::after{
-    height: 20px;
-    width: 20px;
-    background-color: var(--branco);
-    border-radius: 50%;
-    position: fixed;
-    transition: all 0.1s ease-out;
+
+.cursor-link{
+    background: var(--branco);
+    transform: scale(5px);
+    mix-blend-mode: difference;
 }
 
 h1 {

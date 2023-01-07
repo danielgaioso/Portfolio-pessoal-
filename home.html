@@ -18,16 +18,16 @@
         </div> 
         <menu id="menu">
             <ul id="menu_list">
-                <li><a href="#">home</a></li>
-                <li><a href="#">projetos</a></li>
-                <li class="button"><a href="#">contate-me</a></li>
-                <li id="language">
+                <li class="link" ><a href="#">home</a></li>
+                <li class="link" ><a href="#">projetos</a></li>
+                <li class="button link"><a href="#">contate-me</a></li>
+                <li class="link"  id="language">
                     <img src="imgs/language.png" alt="icon-language" id="icon-language">
                                 <p>en</p>
                 </li>
             </ul>
             
-            <img src="imgs/menu.png" alt="menu" class="menuImg"  onclick="clickMenu()">
+            <img src="imgs/menu.png" alt="menu" class="menuImg link"  onclick="clickMenu()">
         </menu>
     </header>
     <main>
@@ -35,7 +35,7 @@
             <h4>&#9995 Olá, meu nome é</h4>
             <h1>nilead iogosa</h1>
             <h2 id="green-high">sou designer</h2>
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/mGXDUveuPfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/mGXDUveuPfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
         </section>
     </main>
     <!--
@@ -73,6 +73,7 @@
         </div>
     </footer>-->
     <script>
+        let link = document.querySelectorAll('.link')
         const cursorDot = document.getElementById('cursor-dot');
         window.addEventListener("mousemove", function(e){
             const posX = e.clientX;
@@ -80,8 +81,15 @@
 
             cursorDot.style.left = `${posX}px`;
             cursorDot.style.top = `${posY}px`;
-        }
-        )
+        })
+        link.forEach(link => {
+            link.addEventListener('mouseleave', () => {
+                cursorDot.classList.remove('cursor-link')
+            })
+            link.addEventListener('mouseover', () => {
+                cursorDot.classList.add('cursor-link')
+            })
+        })
 
 
         function clickMenu() {
