@@ -10,7 +10,7 @@
         <title>daniel gaioso - portfolio</title>
 </head>
 <body>
-    <div id="cursor-dot"></div>
+    <div class="cursor-dot"></div>
     <header>
         <div class="logo"> 
             <img src="imgs/logo.png" alt="logo" id="logo">
@@ -74,7 +74,7 @@
     </footer>-->
     <script>
         var link = document.querySelectorAll('.link')
-        var cursorDot = document.getElementById('cursor-dot');
+        var cursorDot = document.querySelector('.cursor-dot');
 
         window.addEventListener("mousemove", function(e){
             const posX = e.clientX;
@@ -95,11 +95,11 @@
             })
         })
 
-        window.addEventListener('click', function(a) {
+        window.addEventListener('click', () => {
             cursorDot.classList.add('cursor-click')
             setTimeout(() => {
                 cursorDot.classList.remove('cursor-click');
-            }, 500)
+            }, 200)
         })
 
         document.addEventListener('mouseleave', () =>{
