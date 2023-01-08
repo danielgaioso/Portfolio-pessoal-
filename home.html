@@ -35,7 +35,7 @@
             <h4>&#9995 Olá, meu nome é</h4>
             <h1>nilead iogosa</h1>
             <h2 id="green-high">sou designer</h2>
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/mGXDUveuPfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+            <iframe class="link" id="video" width="560" height="315" src="https://www.youtube.com/embed/mGXDUveuPfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
         </section>
     </main>
     <!--
@@ -82,6 +82,8 @@
 
             cursorDot.style.left = `${posX}px`;
             cursorDot.style.top = `${posY}px`;
+            // mouse voltar apos sumir
+            cursorDot.style.display = 'block'
         })
 
         link.forEach(link => {
@@ -93,8 +95,15 @@
             })
         })
 
-        cursorDot.addEventListener('click', function(a) {
+        window.addEventListener('click', function(a) {
             cursorDot.classList.add('cursor-click')
+            setTimeout(() => {
+                cursorDot.classList.remove('cursor-click');
+            }, 500)
+        })
+
+        document.addEventListener('mouseleave', () =>{
+            cursorDot.style.display = `none`
         })
 
 

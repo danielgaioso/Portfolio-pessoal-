@@ -7,11 +7,17 @@
  /*#endregion*/
  
 @keyframes cursorClick{
-    0%{
-
+    0% {
+        transform: scale(1);
+        transform: translate(-12px, -12px);
     }
-    100%{
-        scale: (2);
+    50% {
+        transform: scale(0.5);
+        transform: translate(-12px, -12px);
+    }
+    100% {
+        transform: scale(1);
+        transform: translate(-12px, -12px);
     }
 }
 
@@ -47,11 +53,11 @@
 ::selection{
     background-color: var(--secondary);
     mix-blend-mode: difference;}
-body {
+body{
     width: 100vw;
     background-color: var(--preto);
     overflow-x: hidden;
-    cursor: none;
+
 }
 
 #cursor-dot{
@@ -60,20 +66,19 @@ body {
     border: 3px solid var(--branco);
     border-radius: 50%;
     position: fixed;
-    transform: translate(-50%, -50%);
     transition: all 0.1s ease-out;
+    transform: translate(-12px, -12px);
     pointer-events: none;
 }
 
 .cursor-link{
-    transform: scale(2);
     background: var(--branco);
     mix-blend-mode: difference;
 }
 
 .cursor-click{
-    background: var(--branco);
-    animation: cursorClick 0.4s ease-out forwards;
+    transform: scale(43);
+    animation: cursorClick 5s ease forwards;
 }
 
 h1 {
