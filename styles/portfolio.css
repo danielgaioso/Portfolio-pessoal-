@@ -68,6 +68,10 @@ body{
     height: 16px;
 }
 
+.hide {
+    display: none !important;
+  } 
+  
 h1 {
     font: var(--fonttitle);
     color: var(--branco);

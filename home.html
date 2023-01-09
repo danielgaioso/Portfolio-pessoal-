@@ -35,7 +35,7 @@
             <h4>&#9995 Olá, meu nome é</h4>
             <h1>nilead iogosa</h1>
             <h2 id="green-high">sou designer</h2>
-            <iframe class="link" id="video" width="560" height="315" src="https://www.youtube.com/embed/mGXDUveuPfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/157715456" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </section>
     </main>
     <!--
@@ -73,9 +73,11 @@
         </div>
     </footer>-->
     <script>
-        var link = document.querySelectorAll('.link')
-        var cursorDot = document.querySelector('.cursor-dot');
-
+// custom cursor
+        let link = document.querySelectorAll('.link')
+        let iframes = document.querySelectorAll("iframe");
+        let cursorDot = document.querySelector('.cursor-dot');
+// cursor move
         window.addEventListener("mousemove", function(e){
             const posX = e.clientX;
             const posY = e.clientY;
@@ -85,7 +87,7 @@
             // mouse voltar apos sumir
             cursorDot.style.display = 'block'
         })
-
+// cursor link
         link.forEach(link => {
             link.addEventListener('mouseleave', () => {
                 cursorDot.classList.remove('cursor-link')
@@ -94,19 +96,27 @@
                 cursorDot.classList.add('cursor-link')
             })
         })
-
+// click effect
         window.addEventListener('click', () => {
             cursorDot.classList.add('cursor-click')
             setTimeout(() => {
                 cursorDot.classList.remove('cursor-click');
             }, 200)
         })
-
+// hide cursor when leave
         document.addEventListener('mouseleave', () =>{
             cursorDot.style.display = `none`
         })
-
-
+// hide mouse on iframe
+        iframes.forEach(frame =>{   
+            frame.addEventListener("mouseleave", () => {
+                cursorDot.classList.remove("hide");
+            });
+            frame.addEventListener("mouseover", () => {
+                cursorDot.classList.add("hide");
+            });
+        });
+// menu click
         function clickMenu() {
           if (navegacao.style.display == 'block'){
             navegacao.style.display = 'none'
