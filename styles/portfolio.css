@@ -39,6 +39,7 @@
     mix-blend-mode: difference;}
 body{
     width: 100vw;
+    height: 200vh;
     background-color: var(--preto);
     overflow-x: hidden;
 
@@ -184,14 +185,31 @@ menu li{
 
 /*#region ===============home=============*/
 #home{
+    display: block;
     margin: 0 auto;
-    height: 100vh;
+    height: 1000px;
     border: solid #ffffff10  0.2px;
 }
+#home h1{
+    position: relative;
+    bottom: 24px;
+}
+#home h2{
+    position: relative;
+    bottom: 48px;
+}
+#home h4{
+    font:20px 'Satoshi-Bold', sans-serif;;
+}
 
+#text-home{
+    margin: 64px 0 0 0;
+}
 
 #video{
     box-shadow: 0px 0px 96px 0px rgba(44,199,160,0.62);
+    position: relative;
+    top: 64px;
 }
  /*#endregion*/
  
@@ -215,13 +233,12 @@ menu li{
 /*#region ==============footer=================*/
 footer{
     height: 250px;
-    width: 100%;
+    width: 1216px;
+    margin: auto;
+    position:relative;
+    top: 1000px;
     display: flex;
     justify-content: center;
-}
-#footer_content{
-    width: 1240px;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
