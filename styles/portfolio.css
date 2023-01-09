@@ -50,10 +50,9 @@ body{
     border: 3px solid var(--branco);
     border-radius: 50%;
     position: fixed;
-    transition: left 0.1s ease-out, top 0.1s ease-out;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    transition: height 0.1s ease, width 0.1s ease;
+    transition: all 0.1s ease-out;
 }
 
 .cursor-link{
@@ -71,7 +70,7 @@ body{
 .hide {
     display: none !important;
   } 
-  
+
 h1 {
     font: var(--fonttitle);
     color: var(--branco);
@@ -121,6 +120,14 @@ li:hover{
     display: flex;
     align-items: center;
 }
+.button:hover,
+button a:hover{
+    background-color: var(--branco);
+    border-radius: 25px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
  /*#endregion*/
 
  main{
@@ -132,7 +139,7 @@ li:hover{
 /*#region ==============header================*/
 header {
     height: 84px;
-    width: 1240px;
+    width: 1216px;
     display: flex;
     margin: auto;
     align-items: center;
@@ -159,6 +166,10 @@ menu, ul{
 menu{
     margin-right: 0;
     margin-left: auto;
+}
+
+menu li{
+    padding: 10px;
 }
 
 #language{ display: flex;}
