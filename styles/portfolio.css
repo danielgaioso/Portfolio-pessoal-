@@ -267,20 +267,25 @@ span{
 .svg-anim{
     height: 32px;
     opacity: 1;
-    animation: svg-draw 5s infinite;
+    animation: svg-draw 5s alternate infinite;
 }
 @keyframes svg-draw {
     0%{
-        transform:matrix(1.00,0.00,0.00,1.00,0,0);
+        transform:matrix(1.00,0.00,0.00,1.00,234,-100);
+        stroke-dashoffset: 1000;
     }
     33%{
-        transform:matrix(1.10,-0.12,0.08,0.96,-9,-12);
+        transform:matrix(1.10,-0.12,0.08,0.96,249,-112);
+        stroke-dasharray: 500;
     }
     66%{
-        transform:matrix(1.20,-0.02,0.12,0.79,13,6);
+        transform:matrix(1.20,-0.02,0.12,0.79,213,-116);
+        stroke-dasharray: 10000;
     }
     100%{
-        transform:matrix(1.00,0.00,0.00,1.00,0,0);
+        transform:matrix(1.00,0.00,0.00,1.00,250,-100);
+        stroke-dasharray: 5780;
+        stroke-dashoffset: 0;
     }
     
 }
