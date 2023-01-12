@@ -251,9 +251,8 @@ span{
 }
 #video{
     box-shadow: 0px 0px 96px 0px rgba(44,199,160,0.62);
-    width: 640px;
-    position: relative;
-    top: 64px;
+    width: 50%;
+    margin-top: 64px;
     opacity: 0.3;
     transition: all 1s ease;
 }
@@ -262,7 +261,25 @@ span{
     transform: scale(1.5);
     box-shadow: 0px 0px 160px -96px rgba(44,199,160,0.62);
     opacity: 1;
-    top: 0px;
+    margin-top: 0px;
+}
+
+.svg-anim{
+    height: 32px;
+    opacity: 1;
+    animation: svg-draw 1s infinite;
+}
+@keyframes svg-draw {
+    0%{
+        transform:matrix(1.00,0.00,0.00,1.00,0,0);
+    }
+    50%{
+        transform:matrix(1.10,-0.12,0.12,0.90,-2,-4);
+    }
+    100%{
+        transform:matrix(1.00,0.00,0.00,1.00,0,0);
+    }
+    
 }
  /*#endregion*/
  
