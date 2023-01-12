@@ -54,6 +54,7 @@ body{
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: all 0.1s ease-out;
+    z-index: 1;
 }
 
 .cursor-link{
@@ -178,11 +179,6 @@ menu li{
 .green-high{color: var(--secondary);}
  /*#endregion*/
 
-
-
-
-
-
 /*#region ===============home=============*/
 #home{
     display: block;
@@ -201,6 +197,7 @@ menu li{
 
 #text-home{
     margin: 64px 0 0 0;
+    transition: all 1s ease;
 }
 .wrapper{
     box-sizing: content-box;
@@ -249,11 +246,23 @@ span{
         transform: translateY(-400%);
     }
 }
-
+.opacityLower{
+    opacity: 0.1;
+}
 #video{
     box-shadow: 0px 0px 96px 0px rgba(44,199,160,0.62);
+    width: 640px;
     position: relative;
     top: 64px;
+    opacity: 0.3;
+    transition: all 1s ease;
+}
+
+#video:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 160px -96px rgba(44,199,160,0.62);
+    opacity: 1;
+    top: 0px;
 }
  /*#endregion*/
  

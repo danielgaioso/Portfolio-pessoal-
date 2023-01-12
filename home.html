@@ -50,10 +50,13 @@
                                 <span>designer</span>
                             </h2>  
                     </div>
-                <div>
+                </div>
             </div>
-            <iframe id="video" src="https://player.vimeo.com/video/157715456" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <img src="imgs/videoimg.png" alt="video" id="video">
+            <!--<iframe id="video" src="https://player.vimeo.com/video/157715456" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+            </iframe>-->
         </section>
+
     </main>
     <footer id="footer_content">
         <div id="menuFooter">
@@ -131,6 +134,16 @@
                 cursorDot.classList.add("hide");
             });
         });
+// scale imgvideo
+        let video = document.querySelector('#video')
+        let textHome = document.querySelector('#text-home')
+
+        video.addEventListener('mouseover', () => {
+            textHome.classList.add('opacityLower')
+        })
+        video.addEventListener('mouseleave', () => {
+            textHome.classList.remove('opacityLower')
+        })
 // menu click
         function clickMenu() {
           if (navegacao.style.display == 'block'){
