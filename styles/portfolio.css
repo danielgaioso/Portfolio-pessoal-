@@ -267,14 +267,17 @@ span{
 .svg-anim{
     height: 32px;
     opacity: 1;
-    animation: svg-draw 1s infinite;
+    animation: svg-draw 5s infinite;
 }
 @keyframes svg-draw {
     0%{
         transform:matrix(1.00,0.00,0.00,1.00,0,0);
     }
-    50%{
-        transform:matrix(1.10,-0.12,0.12,0.90,-2,-4);
+    33%{
+        transform:matrix(1.10,-0.12,0.08,0.96,-9,-12);
+    }
+    66%{
+        transform:matrix(1.20,-0.02,0.12,0.79,13,6);
     }
     100%{
         transform:matrix(1.00,0.00,0.00,1.00,0,0);
