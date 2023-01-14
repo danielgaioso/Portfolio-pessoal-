@@ -320,7 +320,6 @@ span{
   }
   .arrow:before {
     left: 0;
-    
     transform: skewY(30deg);
   }
   .arrow:after {
