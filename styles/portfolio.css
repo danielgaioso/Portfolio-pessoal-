@@ -327,6 +327,7 @@ span{
     width: 50%;
     transform: skewY(-30deg);
   }
+  
   @keyframes move-arrow {
     25% {
       opacity: 1;
