@@ -37,12 +37,18 @@
 ::selection{
     background-color: var(--secondary);
     mix-blend-mode: difference;}
+
 body{
     width: 100vw;
     height: 200vh;
     background-color: var(--preto);
-    overflow-x: hidden;
+}
 
+
+
+.smooth-scroll-wrapper {
+    width: 100vh;
+    height: 200vh;
 }
 
 .cursor-dot{
