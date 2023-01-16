@@ -142,7 +142,7 @@ button a:hover{
 /*#region ==============header================*/
 header {
     height: 84px;
-    width: 1216px;
+    max-width: 1216px;
     display: flex;
     margin: auto;
     align-items: center;
@@ -169,6 +169,10 @@ menu, ul{
 menu{
     margin-right: 0;
     margin-left: auto;
+}
+
+menu button:hover{
+    background-color: #000000;
 }
 
 menu li{
@@ -418,17 +422,20 @@ footer{
  /*#endregion*/
 
  /*#region ===========media-query===========*/
-@media screen and (min-width: 680px) and (max-width: 1240px) {
+@media screen and (min-width: 720px) and (max-width: 1240px) {
     header {
-        width: 100%;
+        width: 90%;
         padding: 0 15px 0 15px;
     }
 
 }
 
-@media screen and (min-width: 380px) and (max-width: 650px) {
-        ul.menu_list{
-            display: none;
+@media screen and (min-width: 380px) and (max-width: 719px) {
+        menu ul{
+            display:none;
+        }
+        header {
+            width: 90%;
         }
     }
  /*#endregion*/
