@@ -42,14 +42,9 @@ body{
     width: 100vw;
     height: 200vh;
     background-color: var(--preto);
+    overflow-x: hidden;
 }
 
-
-
-.smooth-scroll-wrapper {
-    width: 100vh;
-    height: 200vh;
-}
 
 .cursor-dot{
     height: 24px;
@@ -190,7 +185,7 @@ menu li{
     display: block;
     margin: 0 auto;
     height: 1000px;
-    border: solid #ffffff10  0.2px;
+
 }
 #home h1{
     position: relative;
@@ -322,7 +317,7 @@ span{
     top: 0;
     height: 100%;
     width: 50%;
-    background: var(--primary);
+    background:#4fdeaa2c;
   }
   .arrow:before {
     left: 0;

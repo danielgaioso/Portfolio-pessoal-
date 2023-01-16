@@ -15,7 +15,6 @@
 </head>
 <body>
     <div class="cursor-dot"></div> 
-    <div class="smooth-scroll-wrapper">
         <header>
             <div class="logo"> 
                 <img src="imgs/logo.png" alt="logo" id="logo">
@@ -106,29 +105,9 @@
                 </ul>
             </div>
         </footer>
-    </div>
+
     <script>
 // smooath scroll
-const body = document.body,
-                scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
-                height = scrollWrap.getBoundingClientRect().height - 1,
-                speed = 0.06;
-
-            var offset = 0;
-
-            body.style.height = Math.floor(height) + "px";
-
-            function smoothScroll() {
-                offset += (window.pageYOffset - offset) * speed;
-
-                var scroll = "translateY(-" + offset + "px) translateZ(0)";
-                scrollWrap.style.transform = scroll;
-
-                callScroll = requestAnimationFrame(smoothScroll);
-            }
-
-            smoothScroll();
-
 
 // custom cursor
         let link = document.querySelectorAll('.link')
