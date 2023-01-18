@@ -139,6 +139,30 @@ button a:hover{
     display: flex;
     margin: auto;}
 
+
+#menu-overlay{
+    position: fixed;
+    background-color: #3823A3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: scale(0);
+    transition: all 1s ease
+}
+
+.menuImg.active{
+    z-index: 3;
+    background-color: #4FDEA9;
+}
+
+#menu-overlay.active{
+    transform: scale(1);
+}
+
+
 /*#region ==============header================*/
 header {
     height: 84px;
@@ -169,10 +193,6 @@ menu, ul{
 menu{
     margin-right: 0;
     margin-left: auto;
-}
-
-menu button:hover{
-    background-color: #000000;
 }
 
 menu li{
