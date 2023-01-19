@@ -163,7 +163,32 @@ button a:hover{
     transform: translateY(0%);
 }
 
+#menu-content{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
 
+}
+
+#content-of-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#content-of-menu li{
+padding: 15px 0;
+}
+
+#menu-content img{
+    width: 5vw;
+    height: 7vw;
+    margin: 0 10vw;
+    align-self: center;
+}
+
+#menu-social ul li{
+    padding: 10px;
+}
 /*#region ==============header================*/
 header {
     height: 84px;
