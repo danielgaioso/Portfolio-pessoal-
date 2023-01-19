@@ -430,23 +430,6 @@ span{
    /*#endregion*/
  /*#endregion*/
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*#region ==============footer=================*/
 footer{
     height: 250px;
@@ -496,15 +479,18 @@ footer{
  /*#endregion*/
 
  /*#region ===========media-query===========*/
-@media screen and (min-width: 720px) and (max-width: 1240px) {
+@media screen and (max-width: 1240px) {
     header {
         width: 90%;
         padding: 0 15px 0 15px;
     }
+    #video{
+        max-width: 80%;
+    }
 
 }
 
-@media screen and (min-width: 380px) and (max-width: 719px) {
+@media screen and (max-width: 840px) {
 /*#region ============components==============*/
 :root {
     --fonttitle: 64px 'Satoshi-Bold', sans-serif;
@@ -541,9 +527,6 @@ body{
 .cursor-link{
     cursor:pointer !important;
 }
-.hide {
-    display: none !important;
-  } 
 
 h1 {
     font: var(--fonttitle);
