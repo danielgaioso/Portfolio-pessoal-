@@ -134,12 +134,11 @@ button a:hover{
  /*#endregion*/
 
  main{
-    height: 500px;
-    width: 1240px;
+    height: 100vh;
     display: flex;
     margin: auto;}
 
-
+/*#region ==============menu overlay================*/
 #menu-overlay{
     position: fixed;
     background-color: #3823A3;
@@ -214,6 +213,8 @@ button a:hover{
     display: flex;
     flex-wrap: wrap;
 }
+ /*#endregion*/
+
 /*#region ==============header================*/
 header {
     height: 84px;
@@ -261,7 +262,7 @@ menu li{
 #home{
     display: block;
     margin: 0 auto;
-    height: 1000px;
+    height: 100vh;
 
 }
 #home h1{
@@ -504,7 +505,98 @@ footer{
 }
 
 @media screen and (min-width: 380px) and (max-width: 719px) {
-        menu ul{
+/*#region ============components==============*/
+:root {
+    --fonttitle: 64px 'Satoshi-Bold', sans-serif;
+    --fonth2: 40px 'Satoshi-Bold', sans-serif;
+    --fonth3: 20px 'Satoshi-Bold', sans-serif;
+    --fonth4: 16px 'Satoshi-Medium', sans-serif;
+    --fontp: 14px 'Satoshi-Regular', sans-serif;
+    --fontsmall: 12px 'Satoshi-Light', sans-serif;
+}
+
+* {    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: auto;
+}
+
+::-webkit-scrollbar{
+    width: 5px;}
+::selection{
+    background-color: var(--secondary);
+    mix-blend-mode: difference;}
+
+body{
+    width: 100vw;
+    background-color: var(--preto);
+    overflow-x: hidden;
+}
+
+
+.cursor-dot{
+    display:none !important;
+}
+
+.cursor-link{
+    cursor:pointer !important;
+}
+.hide {
+    display: none !important;
+  } 
+
+h1 {
+    font: var(--fonttitle);
+    color: var(--branco);
+}
+
+h2 {
+    font: var(--fonth2);
+    color: var(--branco);
+}
+
+h4 {
+    font: var(--fonth4);
+    color: var(--branco);
+}
+
+h4 {
+    font: var(--fonth4);
+    color: var(--branco);
+}
+
+
+p {
+    font: var(--fontp);
+    color: var(--branco);
+}
+a{
+    font: var(--fontp);   
+    color: var(--branco);
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+li{    /* padding entre links / sem bolinha*/
+    margin: 0 16px;
+    list-style: none;
+}
+
+
+.button{
+    background-color: var(--primary);
+    padding: 0 15px;
+    border-radius: 25px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+ /*#endregion*/
+    
+    
+    menu ul{
             display:none;
         }
         header {
@@ -513,5 +605,9 @@ footer{
         #menu-content img{
             display: none;
         }
+    }
+
+    #video{
+        width: 80vw;
     }
  /*#endregion*/
