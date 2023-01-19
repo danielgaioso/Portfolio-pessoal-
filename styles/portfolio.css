@@ -596,7 +596,7 @@ li{    /* padding entre links / sem bolinha*/
  /*#endregion*/
     
     
-    menu ul{
+        menu ul{
             display:none;
         }
         header {
@@ -605,9 +605,9 @@ li{    /* padding entre links / sem bolinha*/
         #menu-content img{
             display: none;
         }
-    }
 
     #video{
         width: 80vw;
     }
+}
  /*#endregion*/
