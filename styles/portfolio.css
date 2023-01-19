@@ -450,7 +450,7 @@ span{
 /*#region ==============footer=================*/
 footer{
     height: 250px;
-    width: 1216px;
+    max-width: 1216px;
     margin: auto;
     position:relative;
     top: 1000px;
