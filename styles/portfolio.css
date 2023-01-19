@@ -154,8 +154,15 @@ button a:hover{
     transition: all 0.5s ease-out;
 }
 
+.menuImg{
+    background: url(../imgs/menu.svg) no-repeat;
+    width: 28px;
+    height: 22px;
+}
+
 .menuImg.active{
-    z-index: 1000;
+    z-index: 100;
+    background: url(../imgs/X.svg) no-repeat;
 }
 
 #menu-overlay.active{
@@ -174,20 +181,38 @@ button a:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 30vw;
 }
 #content-of-menu li{
-padding: 15px 0;
+    padding: 15px 0;
 }
 
 #menu-content img{
     width: 5vw;
     height: 7vw;
-    margin: 0 10vw;
+    margin: 0 5vw;
     align-self: center;
+}
+
+#menu-social{
+    width: 240px;
+    margin-top: 30px;
+}
+
+#menu-overlay #menu-content{
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 0.8s;
+}
+
+#menu-overlay.active #menu-content{
+    opacity: 1;
 }
 
 #menu-social ul li{
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 /*#region ==============header================*/
 header {
@@ -214,6 +239,7 @@ menu, ul{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 menu{
@@ -483,6 +509,9 @@ footer{
         }
         header {
             width: 90%;
+        }
+        #menu-content img{
+            display: none;
         }
     }
  /*#endregion*/
