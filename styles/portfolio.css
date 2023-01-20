@@ -500,7 +500,7 @@ footer{
         margin: 0 auto;
     }
 
-    #video{
+    #video, #home a, #home a div{
         max-width: 70vw;
         min-width: 300px;
         margin: 10px auto 0 auto;
@@ -650,4 +650,5 @@ li{    /* padding entre links / sem bolinha*/
     margin: 0 8px;
 }
 }
- /*#endregion*/
+
+/*#endregion*/
