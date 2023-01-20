@@ -336,6 +336,7 @@ span{
     transition: all 1s ease;
 }
 
+
 #video:hover{
     transform: scale(1.5);
     box-shadow: 0px 0px 160px -96px rgba(44,199,160,0.62);
@@ -493,8 +494,8 @@ footer{
 @media screen and (max-width: 840px) {
 /*#region ============components==============*/
 :root {
-    --fonttitle: 64px 'Satoshi-Bold', sans-serif;
-    --fonth2: 40px 'Satoshi-Bold', sans-serif;
+    --fonttitle: 48px 'Satoshi-Bold', sans-serif;
+    --fonth2: 36px 'Satoshi-Bold', sans-serif;
     --fonth3: 20px 'Satoshi-Bold', sans-serif;
     --fonth4: 16px 'Satoshi-Medium', sans-serif;
     --fontp: 14px 'Satoshi-Regular', sans-serif;
