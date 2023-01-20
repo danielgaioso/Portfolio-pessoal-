@@ -263,7 +263,7 @@ menu li{
     display: block;
     margin: 0 auto;
     height: 100vh;
-
+    border: #4FDEA9 solid;
 }
 #home h1{
     position: relative;
@@ -328,6 +328,7 @@ span{
 .opacityLower{
     opacity: 0.1;
 }
+
 #video{
     box-shadow: 0px 0px 96px 0px rgba(44,199,160,0.62);
     width: 600px;
@@ -619,18 +620,19 @@ li{    /* padding entre links / sem bolinha*/
         display: flex;
         position: relative;
         top: -24px;
+        z-index: -5;
     }
     span{
         display: block;
         height: 100%;
-        padding-left: 10px;
+        padding-left: 5px;
         animation: spin_words 10s infinite;
-
     }
 
 
         #video{
-            width: 80vw;
+            min-width: 70%;
+            margin: 0 auto;
         }
 }
  /*#endregion*/
