@@ -263,7 +263,6 @@ menu li{
     display: block;
     margin: 0 auto;
     height: 100vh;
-    border: #4FDEA9 solid;
 }
 #home h1{
     position: relative;
@@ -331,7 +330,7 @@ span{
 
 #video{
     box-shadow: 0px 0px 96px 0px rgba(44,199,160,0.62);
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 64px;
     opacity: 0.3;
@@ -487,8 +486,22 @@ footer{
         width: 90%;
         padding: 0 15px 0 15px;
     }
+
+    @media (hover: hover){
+        #video:hover{
+            transform: scale(1);
+            box-shadow: 0px 0px 160px -96px rgba(44,199,160,0.62);
+            opacity: 1;
+            margin-top: 0px;
+            }
+
+    #text-home{
+        margin: 0 auto;
+    }
+
     #video{
-        max-width: 80%;
+        max-width: 50vw;
+        margin: 10px auto 0 auto;
     }
 
 }
@@ -631,7 +644,7 @@ li{    /* padding entre links / sem bolinha*/
 
 
         #video{
-            min-width: 70%;
+            min-width: 70vw;
             margin: 0 auto;
         }
 }
