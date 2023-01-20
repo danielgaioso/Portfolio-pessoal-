@@ -501,7 +501,7 @@ footer{
     }
 
     #video{
-        max-width: 50vw;
+        max-width: 70vw;
         min-width: 300px;
         margin: 10px auto 0 auto;
     }
@@ -643,5 +643,11 @@ li{    /* padding entre links / sem bolinha*/
         padding-left: 5px;
         animation: spin_words 10s infinite;
     }
+
+/*footer*/
+
+#footer_social li{
+    margin: 0 8px;
+}
 }
  /*#endregion*/
