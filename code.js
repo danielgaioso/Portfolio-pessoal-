@@ -42,11 +42,17 @@ iframes.forEach(frame =>{
         cursorDot.classList.add("hide");
     });
 });
+
+
+
 // scale imgvideo&svgs hide
 let video = document.querySelector('#video')
 let textHome = document.querySelector('#text-home')
 let svgs = document.querySelector('#svgs-anim')
 
+let query = window.matchMedia('(min-width: 840px)')
+
+if(query.matches){
 video.addEventListener('mouseover', () => {
     textHome.classList.add('opacityLower')
     svgs.classList.remove("hide");
@@ -55,6 +61,7 @@ video.addEventListener('mouseleave', () => {
     textHome.classList.remove('opacityLower')
     svgs.classList.add("hide");
 })
+}
 
 // menu click
 function clickMenu() {
