@@ -103,16 +103,11 @@ a{
     font: var(--fontp);   
     color: var(--branco);
     text-decoration: none;
-    align-items: center;
 }
 
 li{    /* padding entre links / sem bolinha*/
     margin: 0 16px;
     list-style: none;
-}
-
-li:hover{
-    cursor: pointer;
 }
 
 .btn{
@@ -141,6 +136,13 @@ li:hover{
 .btn:hover::before{
     width: 240px;
     height: 240px;
+}
+.btn span{
+    z-index: 1;
+}
+
+.btn:hover{
+    color: var(--primary);
 }
 
  /*#endregion*/
@@ -263,8 +265,8 @@ menu{
     margin-left: auto;
 }
 
-menu li{
-    padding: 10px;
+menu a, menu li{
+    padding: 10px 0;
 }
 
 #language{ display: flex;}
@@ -299,7 +301,7 @@ menu li{
     position: relative;
     bottom: 40px;
 }
-span{
+.green-high span{
     display: block;
     height: 100%;
     padding-left: 10px;

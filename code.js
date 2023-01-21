@@ -1,7 +1,7 @@
 // smooath scroll
 // custom cursor
 let link = document.querySelectorAll('.link')
-let iframes = document.querySelectorAll("iframe");
+let btns = document.querySelectorAll(".btn");
 let cursorDot = document.querySelector('.cursor-dot');
 // cursor move
 window.addEventListener("mousemove", function(e){
@@ -33,12 +33,12 @@ window.addEventListener('click', () => {
 document.addEventListener('mouseleave', () =>{
     cursorDot.style.display = `none`
 })
-// hide mouse on iframe
-iframes.forEach(frame =>{   
-    frame.addEventListener("mouseleave", () => {
+// hide mouse btn
+btns.forEach(btn =>{   
+    btn.addEventListener("mouseleave", () => {
         cursorDot.classList.remove("hide");
     });
-    frame.addEventListener("mouseover", () => {
+    btn.addEventListener("mouseover", () => {
         cursorDot.classList.add("hide");
     });
 });
