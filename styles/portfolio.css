@@ -115,7 +115,7 @@ li:hover{
     cursor: pointer;
 }
 
-.button{
+.btn{
     background-color: var(--primary);
     padding: 0 15px;
     border-radius: 25px;
@@ -123,15 +123,15 @@ li:hover{
     display: flex;
     align-items: center;
 }
-.button:hover,
-button a:hover{
-    background-color: var(--branco);
-    border-radius: 25px;
-    height: 40px;
+.btn:hover,
+btn a:hover{
     display: flex;
     align-items: center;
+    box-shadow: 2px 2px 40px 0px #4fdeaa2f;
+    transition: all 1s;
 }
  /*#endregion*/
+
 
  main{
     height: 100vh;
@@ -584,7 +584,7 @@ li{    /* padding entre links / sem bolinha*/
 }
 
 
-.button{
+.btn{
     background-color: var(--primary);
     padding: 0 15px;
     border-radius: 25px;
