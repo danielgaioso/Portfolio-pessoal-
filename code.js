@@ -49,6 +49,7 @@ iframes.forEach(frame =>{
 let video = document.querySelector('#video')
 let textHome = document.querySelector('#text-home')
 let svgs = document.querySelector('#svgs-anim')
+let scroll = document.querySelector('.scroll')
 
 let query = window.matchMedia('(min-width: 840px)')
 
@@ -56,10 +57,12 @@ let query = window.matchMedia('(min-width: 840px)')
         video.addEventListener('mouseover', () => {
             textHome.classList.add('opacityLower')
             svgs.classList.remove("hide");
+            scroll.classList.add("hide");
         })
         video.addEventListener('mouseleave', () => {
             textHome.classList.remove('opacityLower')
             svgs.classList.add("hide");
+            scroll.classList.remove("hide");
         })
     }
 
