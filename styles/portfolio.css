@@ -130,7 +130,7 @@ li{    /* padding entre links / sem bolinha*/
     height: 0px;
     background: #F9EBE0;
     border-radius: 50%;
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.5s ease-in, height 0.5s ease-in;
 }
 
 .btn:hover::before{
@@ -242,7 +242,7 @@ header {
     justify-content: space-around;
 }
 
-header p, footer p{font-family: 'Satoshi-Bold', sans-serif;}
+header p, footer p, header a{font-family: 'Satoshi-Bold', sans-serif;}
 
 header .logo{
     display: flex;
