@@ -113,9 +113,10 @@ li{    /* padding entre links / sem bolinha*/
 .btn{
     position: relative;
     background-color: var(--primary);
-    padding: 0 15px;
+    padding: 10px 16px;
     border-radius: 25px;
     height: 40px;
+    width:fit-content;
     display: flex;
     align-items: center;
     overflow: hidden;
