@@ -243,7 +243,7 @@ header {
     justify-content: space-around;
 }
 
-header p, footer p, header a{font-family: 'Satoshi-Regular', sans-serif;}
+header p, footer p, header a{font-family: 'Satoshi-Bold', sans-serif;}
 
 header .logo{
     display: flex;
@@ -251,7 +251,7 @@ header .logo{
     align-items: center;
 }
 header #logo{
-    margin-right: 20px;
+    margin-right: 8px;
 }
 
 menu, ul{ 
