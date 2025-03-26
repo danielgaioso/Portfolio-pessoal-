@@ -2,7 +2,7 @@
 /*#region ==============fonts=================*/
 @font-face {font-family: 'Satoshi-Bold';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'), url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'), url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') format('truetype');font-weight: 700; font-display: swap; font-style: normal;}
 @font-face {font-family: 'Satoshi-Medium';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff2') format('woff2'),url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff') format('woff'),url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.ttf') format('truetype');font-weight: 500;font-display: swap;font-style: normal;}
-@font-face {    font-family: 'Satoshi-Regular';    src: url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff2') format('woff2'), url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff') format('woff'), url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.ttf') format('truetype'); font-weight: 400; font-display: swap; font-style: normal;}
+@font-face {font-family: 'Satoshi-Regular';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff2') format('woff2'), url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff') format('woff'), url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.ttf') format('truetype'); font-weight: 400; font-display: swap; font-style: normal;}
 @font-face {font-family: 'Satoshi-Light';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff2') format('woff2'),url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff') format('woff'),url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.ttf') forma('truetype');font-weight: 300;font-display: swap;font-style: normal;}
  /*#endregion*/
 
@@ -88,12 +88,6 @@ h4 {
     font: var(--fonth4);
     color: var(--branco);
 }
-
-h4 {
-    font: var(--fonth4);
-    color: var(--branco);
-}
-
 
 p {
     font: var(--fontp);
@@ -243,7 +237,7 @@ header {
     justify-content: space-around;
 }
 
-header p, footer p, header a{font-family: 'Satoshi-Bold', sans-serif;
+header p, footer p, header a{font-family: 'Satoshi-Medium', sans-serif;
     font-feature-settings: "ss01" on;}
 
 header .logo{
@@ -290,7 +284,7 @@ menu a, menu li{
 }
 
 #home h4{
-    font:20px 'Satoshi-Bold', sans-serif;;
+    font:20px 'Satoshi-Medium', sans-serif;;
 }
 
 #text-home{
