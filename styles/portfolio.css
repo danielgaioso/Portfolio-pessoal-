@@ -237,7 +237,7 @@ header {
     justify-content: space-around;
 }
 
-header p, footer p, header a{font-family: 'Satoshi-Medium', sans-serif;
+header p, footer p, header a{font-weight: 600, sans-serif;
     font-feature-settings: "ss01" on;}
 
 header .logo{
@@ -284,7 +284,7 @@ menu a, menu li{
 }
 
 #home h4{
-    font:20px 'Satoshi-Medium', sans-serif;;
+    font-weight: 600;
 }
 
 #text-home{
