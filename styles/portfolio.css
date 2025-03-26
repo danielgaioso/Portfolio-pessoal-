@@ -571,7 +571,7 @@ li{    /* padding entre links / sem bolinha*/
     }
 
     #home h4{
-        font: 16px 'Satoshi-Variable', sans-serif;;
+        font: 16px 'Satoshi-Bold', sans-serif;;
     }
 
     #text-home{
@@ -580,7 +580,7 @@ li{    /* padding entre links / sem bolinha*/
     }
 
     #home h2{
-        font: 24px 'Satoshi-Variable', sans-serif;;      
+        font: 24px 'Satoshi-Bold', sans-serif;;      
     }
 
     .wrapper-words{
