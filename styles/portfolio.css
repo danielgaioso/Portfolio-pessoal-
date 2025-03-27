@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*#region ==============fonts=================*/
-@font-face {font-family: 'Satoshi-Bold';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'), url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'), url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') format('truetype');font-weight: 700; font-display: swap; font-style: normal;}
-@font-face {font-family: 'Satoshi-Medium';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff2') format('woff2'),url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff') format('woff'),url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.ttf') format('truetype');font-weight: 500;font-display: swap;font-style: normal;}
-@font-face {font-family: 'Satoshi-Regular';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff2') format('woff2'), url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff') format('woff'), url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.ttf') format('truetype'); font-weight: 400; font-display: swap; font-style: normal;}
-@font-face {font-family: 'Satoshi-Light';src: url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff2') format('woff2'),url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.woff') format('woff'),url('../fonts/satoshi/fonts/fonts/Satoshi-Variable.ttf') forma('truetype');font-weight: 300;font-display: swap;font-style: normal;}
+@font-face {font-family: 'Satoshi-Bold';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'), url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'), url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+@font-face {font-family: 'Satoshi-Medium';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'),url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'),url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') format('truetype');font-weight: 500;font-display: swap;}
+@font-face {font-family: 'Satoshi-Regular';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'), url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'), url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') format('truetype'); font-weight: 400; font-display: swap;}
+@font-face {font-family: 'Satoshi-Light';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'),url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'),url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') forma('truetype');font-weight: 300;font-display: swap;}
  /*#endregion*/
 
 /*#region ============components==============*/
@@ -237,8 +237,10 @@ header {
     justify-content: space-around;
 }
 
-header p, footer p, header a{font-weight: 600, sans-serif;
-    font-feature-settings: "ss01" on;}
+header p, footer p, header a{
+    font-weight: 700;
+    font-feature-settings: "ss01" on;
+}
 
 header .logo{
     display: flex;
@@ -280,11 +282,11 @@ menu a, menu li{
 #home h1{
     position: relative;
     bottom: 20px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #home h4{
-    font-weight: 600;
+    font-weight: 590;
 }
 
 #text-home{
@@ -564,17 +566,11 @@ li{    /* padding entre links / sem bolinha*/
         top: -12px;
     }
 
-    #home h4{
-        font: 16px 'Satoshi-Bold', sans-serif;;
-    }
+
 
     #text-home{
         margin: 24px auto 0 auto;
         transition: all 1s ease;
-    }
-
-    #home h2{
-        font: 24px 'Satoshi-Bold', sans-serif;;      
     }
 
     .wrapper-words{
