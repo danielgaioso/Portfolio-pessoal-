@@ -238,7 +238,7 @@ header {
 }
 
 header p, footer p, header a{
-    font-weight: 700;
+    font-weight: 800;
     font-feature-settings: "ss01" on;
 }
 
