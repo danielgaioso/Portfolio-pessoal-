@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*#region ==============fonts=================*/
-@font-face {font-family: 'Satoshi-Bold';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'), url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'), url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') format('truetype'); font-weight: 700; font-display: swap; }
-@font-face {font-family: 'Satoshi-Medium';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'),url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'),url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') format('truetype');font-weight: 500;font-display: swap;}
+@font-face {font-family: 'Satoshi-Bold';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'), url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'), url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') format('truetype'); font-weight: 700; font-display: swap;}
+@font-face {font-family: 'Satoshi-Medium';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'),url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'),url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') format('truetype');font-weight: 500;font-display: swap;    font-feature-settings: "ss01" on;}
 @font-face {font-family: 'Satoshi-Regular';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'), url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'), url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') format('truetype'); font-weight: 400; font-display: swap;}
 @font-face {font-family: 'Satoshi-Light';src: url('../fonts/satoshi/fonts/Satoshi-Variable.woff2') format('woff2'),url('../fonts/satoshi/fonts/Satoshi-Variable.woff') format('woff'),url('../fonts/satoshi/fonts/Satoshi-Variable.ttf') forma('truetype');font-weight: 300;font-display: swap;}
  /*#endregion*/
@@ -77,26 +77,31 @@ body{
 h1 {
     font: var(--fonttitle);
     color: var(--branco);
+    font-feature-settings: "ss01" on; 
 }
 
 h2 {
     font: var(--fonth2);
     color: var(--branco);
+    font-feature-settings: "ss01" on; 
 }
 
 h4 {
     font: var(--fonth4);
     color: var(--branco);
+    font-feature-settings: "ss01" on; 
 }
 
 p {
     font: var(--fontp);
     color: var(--branco);
+    font-feature-settings: "ss01" on; 
 }
 a{
     font: var(--fontp);   
     color: var(--branco);
     text-decoration: none;
+    font-feature-settings: "ss01" on; 
 }
 
 li{    /* padding entre links / sem bolinha*/
@@ -144,9 +149,11 @@ li{    /* padding entre links / sem bolinha*/
 
 
  main{
-    height: 100vh;
     display: flex;
-    margin: auto;}
+    margin: auto;
+    flex-direction: column; /* Altera o fluxo para empilhar verticalmente */
+    height: auto; /* Remove altura fixa para permitir conteúdo fluido */
+}
 
 /*#region ==============menu overlay================*/
 #menu-overlay{
@@ -274,10 +281,11 @@ menu a, menu li{
  /*#endregion*/
 
 /*#region ===============home=============*/
-#home{
+#home, #sobremim{
     display: block;
     margin: 0 auto;
     height: 100vh;
+    min-height: 100vh; /* Mantém altura total da viewport */
 }
 #home h1{
     position: relative;
@@ -356,6 +364,7 @@ menu a, menu li{
     margin-top: 64px;
     opacity: 0.3;
     transition: all 1s ease;
+    border-radius: 36px;
 }
 
 @media (hover: hover){
@@ -389,6 +398,92 @@ menu a, menu li{
         }   
     }
 }
+
+/*#sobre mim*/
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 20px;
+}
+
+/* Seção da Imagem */
+.image-section {
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+
+.background-rect {
+    position: absolute;
+    background-color: var(--primary);
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.image-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    z-index: 2;
+}
+
+.image-mask img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(transparent, --preto 80%);
+    z-index: 3;
+}
+
+.nome-sobre {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align:left;
+    z-index: 4;
+    line-height: 0.8;
+}
+
+/* Seção de Texto */
+.text-section {
+    flex: 1;
+
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.text-box1, .text-box2 {
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-box1 {
+    color: #F9EBE0;
+}
+
+.text-box2 {
+    color: var(--branco);
+    line-height: 1.6;
+}
+
 /*#region scroll*/
 .scroll {
     display: flex;
