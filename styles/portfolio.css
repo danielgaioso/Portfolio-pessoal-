@@ -238,7 +238,7 @@ header {
 }
 
 header p, footer p, header a{
-    font-weight: 800;
+    font-family: 'Satoshi-Medium', sans-serif; 
     font-feature-settings: "ss01" on;
 }
 
@@ -349,7 +349,7 @@ menu a, menu li{
 }
 
 #video{
-    box-shadow: 0px 0px 96px 0px rgba(44,199,160,0.62);
+    box-shadow: 0px 0px 72px -5px #4FDEA9;
     max-width: 600px;
     width: 50vw;
     margin: 0 auto;
@@ -361,7 +361,7 @@ menu a, menu li{
 @media (hover: hover){
     #video:hover{
         transform: scale(1.5);
-        box-shadow: 0px 0px 160px -96px rgba(44,199,160,0.62);
+        box-shadow: 0px 0px 160px -140px #4FDEA9;
         opacity: 1;
         margin-top: 0px;
 
