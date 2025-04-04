@@ -284,6 +284,7 @@ menu a, menu li{
 #home, #sobremim{
     display: block;
     margin: 0 auto;
+    max-width: 1vv;
     height: 100vh;
     min-height: 100vh; /* Mantém altura total da viewport */
 }
@@ -403,34 +404,41 @@ menu a, menu li{
 .container {
     display: flex;
     max-width: 900px;
-    margin: 2rem auto;
-    gap: 2rem;
-    padding: 20px;
+    gap: 96px;
 }
 
 /* Seção da Imagem */
 .image-section {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 239px;
+    height: 274px;
+    min-width: 239px;
+    min-height: 274px;
 }
 
+/* Retângulo de fundo (primeira camada) */
 .background-rect {
     position: absolute;
     background-color: var(--primary);
-    width: 100%;
-    height: 80%;
+    width: 239px;
+    height: 274px;
+    border-radius: 34px;
     bottom: 0;
-    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
 }
 
+/* Imagem e máscara (segunda camada) */
 .image-mask {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 239px;
+    height: 264px;
     overflow: hidden;
-    border-radius: 20px 20px 0 0;
+    border-radius: 34px 34px 0 0;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
 }
 
@@ -440,48 +448,55 @@ menu a, menu li{
     object-fit: cover;
 }
 
+/* Gradiente (terceira camada) */
 .gradient-overlay {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40%;
-    background: linear-gradient(transparent, --preto 80%);
+    width: 239px;
+    height: 150px;
+    background: linear-gradient(transparent, var(--preto));
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 34px 34px;
     z-index: 3;
 }
 
+/* Nome (quarta camada - topo) */
 .nome-sobre {
     position: absolute;
-    bottom: 30px;
-    width: 100%;
-    text-align:left;
+    bottom: 10%;
+    left: 16px;
+    color: var(--branco);
+    text-align: left;
     z-index: 4;
-    line-height: 0.8;
+    line-height: 0.4;
 }
 
 /* Seção de Texto */
 .text-section {
-    flex: 1;
-
-    padding: 2rem;
-    border-radius: 15px;
+    padding: 48px;
+    border-radius: 36px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 8px;
 }
 
-.text-box1, .text-box2 {
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#bg-text {
+    height: 100px;
+    width: 400px;
+    
 }
+
 
 .text-box1 {
-    color: #F9EBE0;
+    font: var(--fontsmall);
+    color: #f9ebe091;
 }
 
 .text-box2 {
     color: var(--branco);
-    line-height: 1.6;
+    text-align: justify;
 }
 
 /*#region scroll*/
