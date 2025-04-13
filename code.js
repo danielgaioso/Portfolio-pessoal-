@@ -83,3 +83,59 @@ btn.onmousemove = function(a){
     btn.style.setProperty('--x', x + 'px');
     btn.style.setProperty('--y', y + 'px');
 }
+
+// skills
+ // Mock de dados (simulando API)
+ const skills = [
+    { name: "HTML", category: "programming", icon: "🌐" },
+    { name: "CSS", category: "programming", icon: "🎨" },
+    { name: "JavaScript", category: "programming", icon: "📜" },
+    { name: "Python", category: "programming", icon: "🐍" },
+    { name: "Figma", category: "design", icon: "✏️" },
+    { name: "Photoshop", category: "design", icon: "🖌️" },
+    { name: "Illustrator", category: "design", icon: "🖼️" },
+    { name: "Blender", category: "design", icon: "🎬" },
+    { name: "Premiere", category: "design", icon: "🎥" },
+    { name: "After Effects", category: "design", icon: "🎞️" },
+    { name: "Inglês", category: "languages", icon: "🇬🇧" },
+    { name: "Espanhol", category: "languages", icon: "🇪🇸" },
+    { name: "Libras", category: "languages", icon: "👐" },
+    { name: "Excel", category: "office", icon: "📊" },
+    { name: "Word", category: "office", icon: "📄" },
+    { name: "PowerPoint", category: "office", icon: "📑" },
+    { name: "React", category: "programming", icon: "⚛️" },
+    { name: "Node.js", category: "programming", icon: "🚀" },
+    { name: "TypeScript", category: "programming", icon: "🔷" },
+    { name: "UI/UX", category: "design", icon: "🎯" }
+];
+
+const skillsGrid = document.getElementById('skillsGrid');
+const filterButtons = document.querySelectorAll('.filter-btn');
+
+function renderSkills(category = 'all') {
+    skillsGrid.innerHTML = '';
+    const filtered = category === 'all' 
+        ? skills 
+        : skills.filter(skill => skill.category === category);
+    
+    filtered.forEach(skill => {
+        const card = document.createElement('div');
+        card.className = 'skill-card';
+        card.innerHTML = `
+            <div class="skill-icon">${skill.icon}</div>
+            <div class="skill-name">${skill.name}</div>
+        `;
+        skillsGrid.appendChild(card);
+    });
+}
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        renderSkills(button.dataset.category);
+    });
+});
+
+// Initial render
+renderSkills();

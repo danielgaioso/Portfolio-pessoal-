@@ -113,16 +113,13 @@
             <section id="sobremim">
                 <div class="container">
                     <div class="image-section">
-                        <div class="background-rect"></div>
                         <div class="image-mask">
                             <!-- Substitua pelo caminho da sua imagem -->
-                            <img src="imgs/daniel.png" alt="Foto de perfil">
+                            <img src="imgs/Profile.png" alt="Foto de perfil">
                         </div>
-                        <div class="gradient-overlay"></div>
-                        <h2 class="nome-sobre">daniel <br><br> gaioso</h2>
                     </div>
-                    <img src="imgs/bg-text.png" id="bg-tex"> </img>
                     <div class="text-section">
+                        <img src="imgs/bg-text.png" id="bg-text"> </img>
                         <p class="text-box1">
                             Graduando em Relações Internacionais na Universidade de São Paulo
                         </p>
@@ -134,7 +131,18 @@
                     </div>
                 </div>
             </section>
-            <section id="skills">
+            <section id="skills" class="skills-">
+                <div class="filters">
+                    <button class="filter-btn active" data-category="all">tudo</button>
+                    <button class="filter-btn" data-category="design">design</button>
+                    <button class="filter-btn" data-category="programming">programação</button>
+                    <button class="filter-btn" data-category="languages">idiomas</button>
+                    <button class="filter-btn" data-category="office">office</button>
+                </div>
+                
+                <div class="skills-grid-wrapper">
+                    <div class="skills-grid" id="skillsGrid"></div>
+                </div>
             </section>
             <section id="projetos">
             </section>

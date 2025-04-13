@@ -281,7 +281,7 @@ menu a, menu li{
  /*#endregion*/
 
 /*#region ===============home=============*/
-#home, #sobremim{
+#home, #sobremim, #skills {
     display: block;
     margin: 0 auto;
     max-width: 1vv;
@@ -416,62 +416,6 @@ menu a, menu li{
     min-height: 274px;
 }
 
-/* Retângulo de fundo (primeira camada) */
-.background-rect {
-    position: absolute;
-    background-color: var(--primary);
-    width: 239px;
-    height: 274px;
-    border-radius: 34px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-/* Imagem e máscara (segunda camada) */
-.image-mask {
-    position: absolute;
-    width: 239px;
-    height: 264px;
-    overflow: hidden;
-    border-radius: 34px 34px 0 0;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.image-mask img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Gradiente (terceira camada) */
-.gradient-overlay {
-    position: absolute;
-    width: 239px;
-    height: 150px;
-    background: linear-gradient(transparent, var(--preto));
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 0 0 34px 34px;
-    z-index: 3;
-}
-
-/* Nome (quarta camada - topo) */
-.nome-sobre {
-    position: absolute;
-    bottom: 10%;
-    left: 16px;
-    color: var(--branco);
-    text-align: left;
-    z-index: 4;
-    line-height: 0.4;
-}
-
 /* Seção de Texto */
 .text-section {
     padding: 48px;
@@ -480,11 +424,17 @@ menu a, menu li{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    z-index: 3;
 }
 
 #bg-text {
-    height: 100px;
-    width: 400px;
+   /* right: -250px;
+    bottom: -590px;
+    height: 800px;*/
+    align-self: center;
+    bottom: -650px;
+    position: absolute;
+    z-index: 2;
     
 }
 
@@ -497,6 +447,81 @@ menu a, menu li{
 .text-box2 {
     color: var(--branco);
     text-align: justify;
+}
+
+/*#region skills*/
+
+#skills {
+    max-width: 1032px;
+
+}
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 8px;
+}
+
+.filter-btn {
+    padding: 4px 8px;
+    border: 2px solid #333;
+    border-radius: 25px;
+    background: transparent;
+    color: var(--branco);
+    transition: all 0.3s ease;
+    font-family: 'Satoshi-Medium';
+}
+
+.filter-btn.active {
+    border-color: var(--branco);
+    color: var(--preto);
+    background: var(--branco);
+}
+
+.skills-grid-wrapper {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.skills-grid {
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.skill-card {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    border-color: #fff;
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    font-size: 0.85rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    height: 8px;
 }
 
 /*#region scroll*/
