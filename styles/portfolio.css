@@ -284,7 +284,6 @@ menu a, menu li{
 #home, #sobremim, #skills {
     display: block;
     margin: 0 auto;
-    max-width: 1vv;
     height: 100vh;
     min-height: 100vh; /* Mantém altura total da viewport */
 }
@@ -452,22 +451,24 @@ menu a, menu li{
 /*#region skills*/
 
 #skills {
-    max-width: 1032px;
-
+    width: 1032px;
 }
+
 .filters {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 8px;
+    gap: 16px;
+    margin-bottom: 16px;
+    margin-top: 24px;
 }
 
 .filter-btn {
-    padding: 4px 8px;
-    border: 2px solid #333;
-    border-radius: 25px;
+    padding: 6px 16px;
+    border: 1px solid #333538;
+    border-radius: 50px;
     background: transparent;
     color: var(--branco);
     transition: all 0.3s ease;
+    font-size: 20px;
     font-family: 'Satoshi-Medium';
 }
 
@@ -486,13 +487,13 @@ menu a, menu li{
     display: inline-grid;
     grid-auto-flow: column;
     grid-template-rows: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 32px;
     padding: 1rem 0;
 }
 
 .skill-card {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border: 2px solid #333;
     border-radius: 15px;
     padding: 1rem;
@@ -505,18 +506,21 @@ menu a, menu li{
 
 .skill-card:hover {
     border-color: #fff;
-    transform: translateY(-5px);
 }
 
-.skill-icon {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+.skill-image {
+    height: 56px;
+    object-fit: contain;
+    margin-top: 4px;
 }
 
 .skill-name {
-    font-size: 0.85rem;
+    font-size: 20px;
+    font-family: 'Satoshi-Medium';
     text-align: center;
-    color: #fff;
+    color: #888380;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 /* Scrollbar Styling */

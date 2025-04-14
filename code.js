@@ -87,31 +87,117 @@ btn.onmousemove = function(a){
 // skills
  // Mock de dados (simulando API)
  const skills = [
-    { name: "HTML", category: "programming", icon: "🌐" },
-    { name: "CSS", category: "programming", icon: "🎨" },
-    { name: "JavaScript", category: "programming", icon: "📜" },
-    { name: "Python", category: "programming", icon: "🐍" },
-    { name: "Figma", category: "design", icon: "✏️" },
-    { name: "Photoshop", category: "design", icon: "🖌️" },
-    { name: "Illustrator", category: "design", icon: "🖼️" },
-    { name: "Blender", category: "design", icon: "🎬" },
-    { name: "Premiere", category: "design", icon: "🎥" },
-    { name: "After Effects", category: "design", icon: "🎞️" },
-    { name: "Inglês", category: "languages", icon: "🇬🇧" },
-    { name: "Espanhol", category: "languages", icon: "🇪🇸" },
-    { name: "Libras", category: "languages", icon: "👐" },
-    { name: "Excel", category: "office", icon: "📊" },
-    { name: "Word", category: "office", icon: "📄" },
-    { name: "PowerPoint", category: "office", icon: "📑" },
-    { name: "React", category: "programming", icon: "⚛️" },
-    { name: "Node.js", category: "programming", icon: "🚀" },
-    { name: "TypeScript", category: "programming", icon: "🔷" },
-    { name: "UI/UX", category: "design", icon: "🎯" }
+    { 
+        name: "power bi", 
+        category: "data", 
+        image: "imgs/Skills/Power_BI.png" 
+    },
+    { 
+        name: "html", 
+        category: "programming", 
+        image: "imgs/Skills/HTML.png" 
+    },
+    { 
+        name: "css", 
+        category: "programming", 
+        image: "imgs/Skills/CSS.png" 
+    },
+    { 
+        name: "inglês", 
+        category: "languages", 
+        image: "imgs/Skills/Ingles.png" 
+    },
+    { 
+        name: "excel", 
+        category: "office", 
+        image: "imgs/Skills/Excel.png" 
+    },
+    { 
+        name: "word", 
+        category: "office", 
+        image: "imgs/Skills/Word.png" 
+    },
+    { 
+        name: "powerpoint", 
+        category: "office", 
+        image: "imgs/Skills/PowerPoint.png" 
+    },
+    { 
+        name: "automação", 
+        category: "tools", 
+        image: "imgs/Skills/Automacao.png" 
+    },
+    { 
+        name: "figma", 
+        category: "design", 
+        image: "imgs/Skills/Figma.png" 
+    },
+    { 
+        name: "canva", 
+        category: "design", 
+        image: "imgs/Skills/Canva.png" 
+    },
+    { 
+        name: "metodologias ágeis", 
+        category: "management", 
+        image: "imgs/Skills/Metodologias_Agéis.png" 
+    },
+    { 
+        name: "python", 
+        category: "programming", 
+        image: "imgs/Skills/Python.png" 
+    },
+    { 
+        name: "javascript", 
+        category: "programming", 
+        image: "imgs/Skills/JavaScript.png" 
+    },
+    { 
+        name: "snovio", 
+        category: "sales", 
+        image: "imgs/Skills/Snovio.png" 
+    },
+    { 
+        name: "illustrator", 
+        category: "design", 
+        image: "imgs/Skills/Illustrator.png" 
+    },
+    { 
+        name: "photoshop", 
+        category: "design", 
+        image: "imgs/Skills/Photoshop.png" 
+    },
+    { 
+        name: "premiere", 
+        category: "design", 
+        image: "imgs/Skills/Premiere.png" 
+    },
+    { 
+        name: "after effects", 
+        category: "design", 
+        image: "imgs/Skills/After.png" 
+    },
+    { 
+        name: "stata", 
+        category: "data", 
+        image: "imgs/Skills/Stata.png" 
+    },
+    { 
+        name: "blender", 
+        category: "design", 
+        image: "imgs/Skills/Blender.png" 
+    },
+    { 
+        name: "libras", 
+        category: "languages", 
+        image: "imgs/Skills/Libras.png" 
+    }
 ];
 
 const skillsGrid = document.getElementById('skillsGrid');
 const filterButtons = document.querySelectorAll('.filter-btn');
 
+// Função única e corrigida
 function renderSkills(category = 'all') {
     skillsGrid.innerHTML = '';
     const filtered = category === 'all' 
@@ -122,9 +208,9 @@ function renderSkills(category = 'all') {
         const card = document.createElement('div');
         card.className = 'skill-card';
         card.innerHTML = `
-            <div class="skill-icon">${skill.icon}</div>
+            <img src="${skill.image}" alt="${skill.name}" class="skill-image">
             <div class="skill-name">${skill.name}</div>
-        `;
+        `; // Usando image em vez de icon
         skillsGrid.appendChild(card);
     });
 }
@@ -137,5 +223,5 @@ filterButtons.forEach(button => {
     });
 });
 
-// Initial render
+// Render inicial
 renderSkills();
