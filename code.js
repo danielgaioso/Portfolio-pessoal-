@@ -89,8 +89,8 @@ btn.onmousemove = function(a){
  const skills = [
     { 
         name: "power bi", 
-        category: "data", 
-        image: "imgs/Skills/Power_BI.png" 
+        category: "dados", 
+        image: "imgs/Skills/power.png" 
     },
     { 
         name: "html", 
@@ -105,27 +105,27 @@ btn.onmousemove = function(a){
     { 
         name: "inglês", 
         category: "languages", 
-        image: "imgs/Skills/Ingles.png" 
+        image: "imgs/Skills/ingles.png" 
     },
     { 
         name: "excel", 
-        category: "office", 
+        category: "tools", 
         image: "imgs/Skills/Excel.png" 
     },
     { 
         name: "word", 
-        category: "office", 
+        category: "tools", 
         image: "imgs/Skills/Word.png" 
     },
     { 
         name: "powerpoint", 
-        category: "office", 
-        image: "imgs/Skills/PowerPoint.png" 
+        category: "tools", 
+        image: "imgs/Skills/ppt.png" 
     },
     { 
         name: "automação", 
         category: "tools", 
-        image: "imgs/Skills/Automacao.png" 
+        image: "imgs/Skills/ia.png" 
     },
     { 
         name: "figma", 
@@ -139,8 +139,8 @@ btn.onmousemove = function(a){
     },
     { 
         name: "metodologias ágeis", 
-        category: "management", 
-        image: "imgs/Skills/Metodologias_Agéis.png" 
+        category: "tools", 
+        image: "imgs/Skills/Metodo.png" 
     },
     { 
         name: "python", 
@@ -150,12 +150,12 @@ btn.onmousemove = function(a){
     { 
         name: "javascript", 
         category: "programming", 
-        image: "imgs/Skills/JavaScript.png" 
+        image: "imgs/Skills/Js.png" 
     },
     { 
         name: "snovio", 
         category: "sales", 
-        image: "imgs/Skills/Snovio.png" 
+        image: "imgs/Skills/Snov.png" 
     },
     { 
         name: "illustrator", 
@@ -179,7 +179,7 @@ btn.onmousemove = function(a){
     },
     { 
         name: "stata", 
-        category: "data", 
+        category: "dados", 
         image: "imgs/Skills/Stata.png" 
     },
     { 

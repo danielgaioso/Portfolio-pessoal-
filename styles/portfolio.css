@@ -285,8 +285,13 @@ menu a, menu li{
     display: block;
     margin: 0 auto;
     height: 100vh;
-    min-height: 100vh; /* Mantém altura total da viewport */
+    min-height: 60vh; /* Mantém altura total da viewport */
 }
+
+#sobremim, #skills{
+    height: 20vh;
+}
+
 #home h1{
     position: relative;
     bottom: 20px;
@@ -494,7 +499,7 @@ menu a, menu li{
 .skill-card {
     width: 130px;
     height: 130px;
-    border: 2px solid #333;
+    border: 1px solid #333;
     border-radius: 15px;
     padding: 1rem;
     display: flex;
