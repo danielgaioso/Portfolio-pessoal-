@@ -149,7 +149,32 @@
             </section>
             <section id="projetos">
             </section>
-            <section id="contato">
+            <section id="contato" class="containercont">
+                <!-- Coluna de Texto -->
+                <div class="text-column">
+                    <h2>precisa falar comigo?</h2>
+                    <p class="subtitle">então vamos conversar!</p>
+                </div>
+                <form class="form-column" action="https://formsubmit.co/seu-email@provedor.com" method="POST">
+                    <input type="hidden" name="_next" value="http://seusite.com/obrigado.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-row">
+                        <div>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+ 
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">enviar mensagem</button>
+                </form>
             </section>
         </main>
         <footer id="footer_content">
