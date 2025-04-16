@@ -147,33 +147,37 @@
                     <div class="skills-grid" id="skillsGrid"></div>
                 </div>
             </section>
-            <section id="projetos">
-            </section>
+        <!-- <section id="projetos">
+            </section>-->
             <section id="contato" class="containercont">
                 <!-- Coluna de Texto -->
                 <div class="text-column">
                     <h2>precisa falar comigo?</h2>
                     <p class="subtitle">então vamos conversar!</p>
                 </div>
-                <form class="form-column" action="https://formsubmit.co/seu-email@provedor.com" method="POST">
-                    <input type="hidden" name="_next" value="http://seusite.com/obrigado.html">
+                <form class="form-column" action="https://formsubmit.co/odanielgaioso@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://danielgaioso.netlify.app/">
                     <input type="hidden" name="_captcha" value="false">
                     <div class="form-row">
-                        <div>
-                            <input type="text" id="name" name="name" required>
+                        <div class="input-with-icon">
+                            <img src="imgs/Contact/nome.png" class="input-icon">
+                            <input type="text" id="name" name="name" required placeholder="nome">
                         </div>
-                        <div>
-                            <input type="tel" id="phone" name="phone" required>
+                        <div class="input-with-icon">
+                            <img src="imgs/Contact/phone.png" class="input-icon">
+                            <input type="tel" id="phone" name="phone" required placeholder="celular">
                         </div>
                     </div>
-                    <div>
-                        <input type="email" id="email" name="email" required>
+            
+                    <div class="input-with-icon">
+                        <img src="imgs/Contact/mail.png" class="input-icon">
+                        <input type="email" id="email" name="email" required placeholder="email">
                     </div>
-                    <div>
- 
-                        <textarea id="message" name="message" required></textarea>
+            
+                        <textarea id="message" name="message" required placeholder="compartilhe suas ideias"></textarea>
+                    <div id="button-container" >
+                        <button type="submit" class="link" id="button-form" >enviar mensagem</button>
                     </div>
-                    <button type="submit" class="btn">enviar mensagem</button>
                 </form>
             </section>
         </main>

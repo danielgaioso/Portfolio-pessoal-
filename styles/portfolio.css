@@ -40,7 +40,6 @@
 
 body{
     width: 100vw;
-    height: 200vh;
     background-color: var(--preto);
     overflow-x: hidden;
 }
@@ -151,8 +150,7 @@ li{    /* padding entre links / sem bolinha*/
  main{
     display: flex;
     margin: auto;
-    flex-direction: column; /* Altera o fluxo para empilhar verticalmente */
-    height: auto; /* Remove altura fixa para permitir conteúdo fluido */
+    flex-direction: column; /* Altera o fluxo para empilhar verticalmente */ /* Remove altura fixa para permitir conteúdo fluido */
 }
 
 /*#region ==============menu overlay================*/
@@ -534,6 +532,11 @@ menu a, menu li{
 
 /* CONTATO */
 
+#contato{
+    height: auto;
+    max-width: 1023px;
+}
+
 .containercont {
     max-width: 1200px;
     margin: 0 auto;
@@ -550,21 +553,23 @@ menu a, menu li{
 /* Coluna de Texto */
 .text-column {
     flex: 1;
-    padding: 32px;
     display: flex;
     flex-direction: column;
     max-width: 30%;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 .text-column h2{
-    line-height: 48px;
+    line-height: 50px;
+    margin-bottom: 12px;
 }
 
 /* Coluna do Formulário */
 .form-column {
     flex: 1;
-    padding: 32px;
     max-width: 60%;
     margin-left: 10%;
+    align-content: center;
 }
 
 .form-row {
@@ -577,9 +582,35 @@ menu a, menu li{
     flex: 1;
 }
 
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+.input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.textarea-icon {
+    top: 28px;
+    transform: none;
+}
+
 input, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 12px 12px 12px 40px;
     border: none;
     border-bottom: 3px solid var(--primary);
     background-color: transparent;
@@ -589,23 +620,59 @@ input, textarea {
     transition: all 0.3s ease;
 }
 
-input:focus, textarea:focus {
-    outline: none;
-    border-color: #6c5ce7;
-}
-
 textarea {
+    margin-top: 20px;
+    padding: 12px 12px 12px 12px;
+    min-height: 48px;
     resize: vertical;
 }
 
-button {
+/* Ajuste para foco */
+input:focus, textarea:focus {
+    padding-left: 45px;
+}
+
+input:focus + .input-icon,
+textarea:focus + .input-icon {
+    left: 15px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .input-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    input, textarea {
+        padding-left: 35px;
+    }
+    
+    input:focus, textarea:focus {
+        padding-left: 38px;
+    }
+}
+
+#button-form {
+    background-color: var(--primary);
+    padding: 10px 16px;
     color: var(--branco);
+    border-radius: 25px;
+    height: 40px;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
     font-family: 'Satoshi-Medium';
     border: none;
     font-size: 16px;
     margin-top: 15px;
 }
 
+#button-container {
+    display: flex;
+    justify-content: flex-end;
+}
 
 @media (max-width: 768px) {
     .container {
