@@ -765,7 +765,6 @@ footer{
     max-width: 1216px;
     margin: auto;
     position:relative;
-    top: 1000px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -842,7 +841,12 @@ li{    /* padding entre links / sem bolinha*/
     list-style: none;
 }
 
-
+.cursor-dot {
+    display: none !important;
+}
+* {
+    cursor: auto !important;
+}
 
  /*#endregion*/
     
