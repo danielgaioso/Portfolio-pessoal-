@@ -44,6 +44,44 @@ body{
     overflow-x: hidden;
 }
 
+@media screen and (min-width: 769px) {
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px; /* Largura do efeito */
+        height: 100vh;
+        background: radial-gradient(circle at left, 
+            rgba(56,35,163,0.1) 40%,   /* --primary com transparência */
+            transparent 80%);
+        z-index: 99;
+        pointer-events: none;
+    }
+
+    body::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 400px; /* Largura do efeito */
+        height: 100vh;
+        background: radial-gradient(circle at right, 
+            rgba(79,222,169,0.1) 40%,  /* --secondary com transparência */
+            transparent 80%);
+        z-index: 99;
+        pointer-events: none;
+    }
+
+    /* Efeito extra de profundidade */
+    body::before {
+        filter: blur(60px);
+    }
+
+    body::after {
+        filter: blur(80px);
+    }
+}
 
 .cursor-dot{
     height: 24px;
@@ -453,7 +491,7 @@ menu a, menu li{
 /*#region skills*/
 
 #skills {
-    width: 1032px;
+    max-width: 1216px;
 }
 
 .filters {
@@ -534,7 +572,7 @@ menu a, menu li{
 
 #contato{
     height: auto;
-    max-width: 1023px;
+    max-width: 1216px;
 }
 
 .containercont {
@@ -841,12 +879,12 @@ li{    /* padding entre links / sem bolinha*/
     list-style: none;
 }
 
-.cursor-dot {
-    display: none !important;
-}
-* {
-    cursor: auto !important;
-}
+    .cursor-dot {
+        display: none !important;
+    }
+    * {
+        cursor: auto !important;
+    }
 
  /*#endregion*/
     
@@ -861,16 +899,28 @@ li{    /* padding entre links / sem bolinha*/
             display: none;
         }
 
-
+    
+#skills button{
+    font-size: 12px;
+    padding: 2px 12px;
+}
+.filters {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
 
 /*home*/
 
-    #home h1{
+    h1{
         position: relative;
         top: -12px;
+        font-size: 64px;
     }
-
-
+    h2{
+        font-size: 32px;
+    }
 
     #text-home{
         margin: 24px auto 0 auto;
