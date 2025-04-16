@@ -449,6 +449,7 @@ menu a, menu li{
 /* Seção da Imagem */
 .image-section {
     position: relative;
+    align-self: center;
     width: 239px;
     height: 274px;
     min-width: 239px;
@@ -909,6 +910,18 @@ li{    /* padding entre links / sem bolinha*/
     gap: 4px;
     margin-bottom: 16px;
     margin-top: 24px;
+}
+
+#home{
+    height: auto;
+}
+
+#sobremim{
+    height: 70vh;
+}
+
+#skills {
+    max-width: 500px;
 }
 
 /*home*/
