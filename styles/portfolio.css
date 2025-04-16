@@ -880,6 +880,9 @@ li{    /* padding entre links / sem bolinha*/
     list-style: none;
 }
 
+#menuFooter{
+    opacity: 0;
+}
     .cursor-dot {
         display: none !important;
     }
